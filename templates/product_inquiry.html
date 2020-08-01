@@ -1,0 +1,54 @@
+{% extends 'layout.html' %}
+{% block content %}
+<section class="product-in flex">
+    <div class="product-in-main">
+        <h1>Product Inquiry</h1>
+        <p>Got questions about Our Product ? Would you like to discuss a potential
+    
+            purchase ? Kindly complete this short form, and we will have someone contact
+    
+            you with more details. Or kindly click on the WhatsApp icon to contact us. </p>
+    </div>
+    
+    <aside class="product-in-aside">
+        <img src="../static/images/image 158.png" alt="">
+    </aside>
+</section>
+
+
+<section class="container">
+    <form class="form-bg">
+        <h3>Drop a Message</h3>
+        <div class="form-row">
+            <div class="form-group col-md-6">
+                <label for="inputFirstName">First Name</label>
+                <input type="text" class="form-control" id="inputFirstName">
+            </div>
+            <div class="form-group col-md-6">
+                <label for="inputLastName">Last Name</label>
+                <input type="text" class="form-control" id="inputLastName">
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="inputAddress">E-mail Address</label>
+            <input type="email" class="form-control" id="inputAddress">
+        </div>
+        <div class="form-row">
+            <div class="form-group col-md-6">
+                <label for="inputPhone">Phone Number</label>
+                <input type="text" class="form-control" id="inputPhone">
+            </div>
+            <div class="form-group col-md-6">
+                <label for="inputCompany">Company(Optional)</label>
+                <input type="text" class="form-control" id="inputCompany">
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="exampleFormControlTextarea1">Additional Note</label>
+            <textarea class="form-control" id="exampleFormControlTextarea1" rows="4"></textarea>
+        </div>
+        <button type="submit" class="btn">Sign in</button>
+    </form>
+</section>
+
+{% endblock content %}
