@@ -508,10 +508,10 @@ button:focus {
         padding-bottom: 2em;
     }
     .footer h1{
-        font-size: 1.5rem;
+        font-size: 1.2rem;
     }
     .footer p{
-        font-size: 1rem;
+        font-size: .95rem;
     }
     .foot{
         flex-direction: row;
@@ -529,11 +529,11 @@ button:focus {
     }
     .foot-link li{
         margin-bottom: 1em;
-        font-size: 1.5rem;
+        font-size: 1.2rem;
         font-weight: 700;
     }
     .footer-last p{
-        font-size: 1rem;
+        font-size: .90rem;
         color: rgba(255, 255, 255, 0.582);
     }
 
