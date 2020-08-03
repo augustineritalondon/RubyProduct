@@ -1,24 +1,24 @@
 from flask import Flask, render_template, request
-from flask_mail import Mail, Message
-import smtplib
+# from flask_mail import Mail, Message
+# import smtplib
 
 app = Flask(__name__)
 
-app.config['DEBUG'] = True
-app.config['TESTING'] = False
-app.config['MAIL_SERVER'] = 'smtp.gmail.com'
-app.config['MAIL_PORT'] = 587
-app.config['MAIL_USE_TLS'] = True
-app.config['MAIL_USE_SSL'] = False
+# app.config['DEBUG'] = True
+# app.config['TESTING'] = False
+# app.config['MAIL_SERVER'] = 'smtp.gmail.com'
+# app.config['MAIL_PORT'] = 587
+# app.config['MAIL_USE_TLS'] = True
+# app.config['MAIL_USE_SSL'] = False
 # app.config['MAIL_USERNAME'] = os.environ.get('EMAIL_USER')
 # app.config['MAIL_PASSWORD'] = os.environ.get('EMAIL_PASS')
-app.config['MAIL_USERNAME'] = 'itskeldon@gmail.com'
-app.config['MAIL_PASSWORD'] = 'google.com/keldon'
-app.config['MAIL_DEFAULT_SENDER'] = 'itskeldon@gmail.com'
-app.config['MAIL_MAX_EMAILS'] = None
-app.config['MAIL_ASCII_ATTACHMENTS'] = False
+# app.config['MAIL_USERNAME'] = 'itskeldon@gmail.com'
+# app.config['MAIL_PASSWORD'] = 'google.com/keldon'
+# app.config['MAIL_DEFAULT_SENDER'] = 'itskeldon@gmail.com'
+# app.config['MAIL_MAX_EMAILS'] = None
+# app.config['MAIL_ASCII_ATTACHMENTS'] = False
 
-mail = Mail(app)
+# mail = Mail(app)
 
 @app.route('/')
 @app.route('/home')
