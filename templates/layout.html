@@ -37,10 +37,10 @@
                         <a class="nav-link" href="#services">Products</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">About Us</a>
+                        <a class="nav-link" href="{{ url_for('about') }}">About Us</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Contact</a>
+                        <a class="nav-link" href="#contact">Contact</a>
                     </li>
                 </ul>
 
@@ -53,6 +53,8 @@
     <main role="main">
         {% block content %} {% endblock content %}
     </main>
+
+    <a class="gotopbtn" href="#"> <i class="fas fa-arrow-up"></i></a>
 
     <footer class="footer">
         <div class="container">
@@ -88,6 +90,8 @@
         </div>
     </footer>
 
+    <script src="https://apps.elfsight.com/p/platform.js" defer></script>
+    <div class="elfsight-app-134b3798-9355-456e-9095-6feafdf1a996"></div>
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
         integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
@@ -106,6 +110,9 @@
             $('.owl-carousel').owlCarousel({
                 mouseDrag: false,
                 loop: true,
+                autoplay: true,
+                autoplaySpeed: 6000,
+                smartSpeed: 6000,
                 margin: 2,
                 nav: true,
                 responsive: {

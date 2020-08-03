@@ -3,14 +3,14 @@
 
 <section class="container products-page flex">
     <aside class="products-page-aside">
-        <div class="page-aside">
+        <div class="page-aside latest">
             <ul>
-                <h3>CCTV PRODUCTS</h3>
-                <li> <a href="{{ url_for('products') }}"><strong> Hikvision </strong></a></li>
-                <li> <a href="{{ url_for('CCTV_AnalogCameras') }}"> Hd Analog Cameras </a></li>
-                <li> <a href="{{ url_for('CCTV_IpCameras') }}">Ip Cameras</a></li>
-                <li> <a href="{{ url_for('CCTV_CovertCameras') }}">Covert Cameras</a></li>
-                <li> <a href="{{ url_for('CCTV_DVRS') }}">DVRs</a></li>
+                <li><a href="{{ url_for('products') }}">CCTV Survelliance</a></li>
+                <li class="text_change"><a href="{{ url_for('Pabx_intercom') }}">PABX/Intercom</a></li>
+                <li><a href="{{ url_for('Access_Control') }}">Access Control</a></li>
+                <li><a href="{{ url_for('Fire_Alarm') }}">Fire / Burglary Alarm</a></li>
+                <li><a href="{{ url_for('Inverter_SolarSystem') }}">Inverter & Solar System</a></li>
+                <li><a href="{{ url_for('Permitter') }}">Permitter Fencing</a></li>
             </ul>
         </div>
     </aside>
@@ -18,112 +18,78 @@
         <div class="page-main flex">
             <div class="product-1">
                 <a href="{{ url_for('product_inquiry') }}">
-                    <img src="../static/images/image 29.png" alt="">
-                    <p>Hikvision DS-2CE16DOT-IRE 1080p POC Bullet Camera</p>
+                    <img src="../static/images/image 59.png" alt="">
+                    <p>Grandstream 6-Line WIFI Enabled IP Phone(GXP1760W)</p>
                 </a>
             </div>
             <div class="product-2">
                 <a href="{{ url_for('product_inquiry') }}">
-                    <img src="../static/images/image 16.png" alt="">
-                    <p>DS-2CD2043G0-I 4 MP IR Fixed Bullet Network Camera</p>
+                    <img src="../static/images/image 60.png" alt="">
+                    <p>Grandstream 6-Line Enterprise IP Phone with POE(GXP2160)</p>
                 </a>
             </div>
             <div class="product-3">
                 <a href="{{ url_for('product_inquiry') }}">
-                    <img src="../static/images/image 17.png" alt="">
-                    <p>DS-2CD1023G0-I 2 MP IR Fixed Bullet Network
-                        Camera</p>
+                    <img src="../static/images/image 62.png" alt="">
+                    <p>Grandstream GRP2612P Carrier Grade 2-Line IP Phone with PoE</p>
                 </a>
             </div>
             <div class="product-4">
                 <a href="{{ url_for('product_inquiry') }}">
-                    <img src="../static/images/image 26.png" alt="">
-                    <p>HIKVISION (720P) Turbo Dome DS-2CE56C0T-IR METAL</p>
+                    <img src="../static/images/image 64.png" alt="">
+                    <p>Panasonic IP Phone KX-NT553</p>
                 </a>
             </div>
         </div>
         <div class="page-main flex">
-            <div class="product-1">
+            <div class="product-4">
                 <a href="{{ url_for('product_inquiry') }}">
-                    <img src="../static/images/image 23.png" alt="">
-                    <p>Hikvision SPEED DOME TURBO HD 4 Inch PTZ CAMERA DS-</p>
-                </a>
-            </div>
-            <div class="product-2">
-                <a href="{{ url_for('product_inquiry') }}">
-                    <img src="../static/images/image 20.png" alt="">
-                    <p>Hikvision DS-2CE12DOT-PIRXF Turbo HD Bullet
-                        PIR Siren</p>
-                </a>
-            </div>
-            <div class="product-3">
-                <a href="{{ url_for('product_inquiry') }}">
-                    <img src="../static/images/image 22.png" alt="">
-                    <p>Hikvision HD720P Vari-focal IR Bullet Camera DS-2CE16C2T-</p>
+                    <img src="../static/images/image 65.png" alt="">
+                    <p>Panasonic IP Phone KX-NT560</p>
                 </a>
             </div>
             <div class="product-4">
                 <a href="{{ url_for('product_inquiry') }}">
-                    <img src="../static/images/image 25.png" alt="">
-                    <p>Hikvision Turbo 1080p HD Vari Focal Dome
-                        Camera DS-</p>
-                </a>
-            </div>
-        </div>
-        <div class="page-main flex">
-            <div class="product-1">
-                <a href="{{ url_for('product_inquiry') }}">
-                    <img src="../static/images/image 24.png" alt="">
-                    <p>Hikvision HD1080P EXIR Bullet Camera DS-2CE16D0T-IT5</p>
-                </a>
-            </div>
-            <div class="product-2">
-                <a href="{{ url_for('product_inquiry') }}">
-                    <img src="../static/images/image 20.png" alt="">
-                    <p>Hikvision DS-2CE12DOT-PIRXF Turbo HD Bullet
-                        PIR Siren</p>
-                </a>
-            </div>
-            <div class="product-3">
-                <a href="{{ url_for('product_inquiry') }}">
-                    <img src="../static/images/image 22(1).png" alt="">
-                    <p>Hikvision HD720P Vari-focal IR Bullet Camera DS-2CE16C2T-</p>
+                    <img src="../static/images/image 66.png" alt="">
+                    <p>Panasonic IP Phone KX-HDV230</p>
                 </a>
             </div>
             <div class="product-4">
                 <a href="{{ url_for('product_inquiry') }}">
-                    <img src="../static/images/image 25(1).png" alt="">
-                    <p>Hikvision Turbo 1080p HD Vari Focal Dome
-                        Camera DS-</p>
+                    <img src="../static/images/image 68.png" alt="">
+                    <p>Panasonic KX-DT543 -24 Button 3-Line LCD Display Digital Proprietary Phone</p>
+                </a>
+            </div>
+            <div class="product-4">
+                <a href="{{ url_for('product_inquiry') }}">
+                    <img src="../static/images/image 67.png" alt="">
+                    <p>Panasonic KX-NT400 Proprietary IP Phone</p>
                 </a>
             </div>
         </div>
         <div class="page-main flex">
-            <div class="product-1">
+            <div class="product-4">
                 <a href="{{ url_for('product_inquiry') }}">
-                    <img src="../static/images/image 19.png" alt="">
-                    <p>Hikvision DS-2CE16DOT-IRE 1080p POC Bullet
-                        Camera</p>
+                    <img src="../static/images/image 69.png" alt="">
+                    <p>Panasonic KX-UT133 VoIP SIP Phone</p>
                 </a>
             </div>
-            <div class="product-1">
+            <div class="product-4">
                 <a href="{{ url_for('product_inquiry') }}">
-                    <img src="../static/images/image 20(2).png" alt="">
-                    <p>Hikvision DS-2CE12DOT-PIRXF Turbo HD Bullet
-                        PIR Siren</p>
+                    <img src="../static/images/image 70.png" alt="">
+                    <p>Panasonic KX-UT670 SIP Phone</p>
                 </a>
             </div>
-            <div class="product-1">
+            <div class="product-4">
                 <a href="{{ url_for('product_inquiry') }}">
-                    <img src="../static/images/image 22.png" alt="">
-                    <p>Hikvision HD720P Vari-focal IR Bullet Camera DS-2CE16C2T-</p>
+                    <img src="../static/images/image 71.png" alt="">
+                    <p>Grandstream 1-Line IP Phone - GXP1615</p>
                 </a>
             </div>
-            <div class="product-1">
+            <div class="product-4">
                 <a href="{{ url_for('product_inquiry') }}">
-                    <img src="../static/images/image 25(2).png" alt="">
-                    <p>Hikvision Turbo 1080p HD Vari Focal Dome
-                        Camera DS-</p>
+                    <img src="../static/images/image 72.png" alt="">
+                    <p>Grandstream 4-Line Enterprise IP Phone with POE - GXP2140</p>
                 </a>
             </div>
         </div>

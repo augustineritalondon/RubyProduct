@@ -13,36 +13,42 @@
     </div>
 </div>
 
-<section class="container services">
+<section class="container services" id="services">
     <h1>Our Services</h1>
 
     <div class="service-items">
         <div class=" ser-1 flex">
             <div class="service-item-card"><a href="{{ url_for('products') }}">
-                <img src="../static/images/ESWE4zJrHV 3.jpg" alt="cctv surveillance">
-                <p>CCTV SURVEILLANCE</p></a>
+                    <img src="../static/images/ESWE4zJrHV 3.jpg" alt="cctv surveillance">
+                    <p>CCTV SURVEILLANCE</p>
+                </a>
             </div>
-            <div class="service-item-card">
-                <img src="../static/images/image 4.jpg" alt="pabx/intercom">
-                <p>PABX / INTERCOM </p>
+            <div class="service-item-card"><a href="{{ url_for('Pabx_intercom') }}">
+                    <img src="../static/images/image 4.jpg" alt="pabx/intercom">
+                    <p>PABX / INTERCOM </p>
+                </a>
             </div>
-            <div class="service-item-card">
-                <img src="../static/images/image 12.jpg" alt="access control">
-                <p>ACCESS CONTROL</p>
+            <div class="service-item-card"><a href="{{ url_for('Access_Control') }}"">
+                    <img src="../static/images/image 12.jpg" alt="access control">
+                    <p>ACCESS CONTROL</p>
+                </a>
             </div>
         </div>
         <div class=" ser-2 flex">
-            <div class="service-item-card">
-                <img src="../static/images/image 6.jpg" alt="fire/burglary alarm">
-                <p>FIRE / BURGLARY ALARM </p>
+            <div class="service-item-card"><a href="{{ url_for('Fire_Alarm') }}">
+                    <img src="../static/images/image 6.jpg" alt="fire/burglary alarm">
+                    <p>FIRE / BURGLARY ALARM </p>
+                </a>
             </div>
-            <div class="service-item-card">
-                <img src="../static/images/image 13.jpg" alt="inverter & solar system">
-                <p>INVERTER & SOLAR SYSTEM</p>
+            <div class="service-item-card"><a href="{{ url_for('Inverter_SolarSystem') }}">
+                    <img src="../static/images/image 13.jpg" alt="inverter & solar system">
+                    <p>INVERTER & SOLAR SYSTEM</p>
+                </a>
             </div>
-            <div class="service-item-card">
-                <img src="../static/images/image 14.jpg" alt="permiter fencing">
-                <p>PERMITER FENCING</p>
+            <div class="service-item-card"><a href="{{ url_for('Permitter') }}">
+                    <img src="../static/images/image 14.jpg" alt="permiter fencing">
+                    <p>PERMITER FENCING</p>
+                </a>
             </div>
         </div>
     </div>
@@ -153,7 +159,7 @@
             </div>
             <div class="item show">
                 <div class="card border-0 py-3 px-4">
-                    <p class="content mb-2 mx-2">On behalf of the entire staff of Leeds Bryan International Ltd, I wish
+                    <p class="content mb-2 mx-2" style="font-size: .75rem;">On behalf of the entire staff of Leeds Bryan International Ltd, I wish
                         to commend your team for the exemplary efforts in the execution of our project. We are impressed
                         with the qualityof products used and appreciate your swift delivery. PENDALATON have undertaken
                         a variety of work for me since they first started and I have been impressed by the service
@@ -171,7 +177,7 @@
             </div>
             <div class="item last">
                 <div class="card border-0 py-3 px-4">
-                    <p class="content mb-2 mx-2">On behalf of the entire staff of Leeds Bryan International Ltd, I wish
+                    <p class="content mb-2 mx-2" style="font-size: .75rem;">On behalf of the entire staff of Leeds Bryan International Ltd, I wish
                         to commend your team for the exemplary efforts in the execution of our project. We are impressed
                         with the qualityof products used and appreciate your swift delivery. PENDALATON have undertaken
                         a variety of work for me since they first started and I have been impressed by the service
@@ -179,45 +185,54 @@
                     <h6 class="mb-3 ml-auto">-CEO, Leeds Bryan International Ltd</h6>
                 </div>
             </div>
+            <div class="item next">
+                <div class="card border-0 py-3 px-4">
+                    <p class="content mb-2 mx-2">We have received positive feedback from PENDALATON INTEGRATED SERVICES
+                        LTD personnel at all levels on both the solution developed and their overall performance which
+                        is something to be proud of.</p>
+                    <h6 class="mb-3 ml-auto">-Nevadal Hotel & Suites</h6>
+                </div>
+            </div>
         </div>
     </div>
 </section>
 
-<section class="contact">
+<section class="contact" id="contact">
     <div class="container">
         <h1>Contact us today to get more information</h1>
-        <p>We would love to hear from you, send us a message using this form or click on the WhatsApp icon to chat with us directly </p>
+        <p>We would love to hear from you, send us a message using this form or click on the WhatsApp icon to chat with
+            us directly </p>
 
-        <form>
+        <form action="{{ url_for('send_message') }}" method="POST">
             <div class="form-row">
                 <div class="form-group col-md-6">
                     <label for="inputFirstName">First Name</label>
-                    <input type="text" class="form-control" id="inputFirstName">
+                    <input type="text" name="firstname" class="form-control" id="inputFirstName" required>
                 </div>
                 <div class="form-group col-md-6">
                     <label for="inputLastName">Last Name</label>
-                    <input type="text" class="form-control" id="inputLastName">
+                    <input type="text" name="lastname" class="form-control" id="inputLastName" required>
                 </div>
             </div>
             <div class="form-group">
                 <label for="inputAddress">E-mail Address</label>
-                <input type="email" class="form-control" id="inputAddress">
+                <input type="email" name="email" class="form-control" id="inputAddress" required>
             </div>
             <div class="form-row">
                 <div class="form-group col-md-6">
                     <label for="inputPhone">Phone Number</label>
-                    <input type="text" class="form-control" id="inputPhone">
+                    <input type="text" name="phone" class="form-control" id="inputPhone">
                 </div>
                 <div class="form-group col-md-6">
                     <label for="inputCompany">Company(Optional)</label>
-                    <input type="text" class="form-control" id="inputCompany">
+                    <input type="text" name="company" class="form-control" id="inputCompany">
                 </div>
             </div>
             <div class="form-group">
                 <label for="exampleFormControlTextarea1">Additional Description(Optional)</label>
-                <textarea class="form-control" id="exampleFormControlTextarea1" rows="4"></textarea>
+                <textarea class="form-control" name="message" id="exampleFormControlTextarea1" rows="4"></textarea>
             </div>
-            <button type="submit" class="btn">Sign in</button>
+            <button type="submit" class="btn">Submit</button>
         </form>
     </div>
 </section>

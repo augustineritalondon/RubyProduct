@@ -1,8 +1,12 @@
+html{
+    scroll-behavior: smooth;
+}
 body{
     margin: 0;
     color: #504f4f;
     font-family: Noto Sans;
     background-color: white!important;
+    font-size: 1.125rem;
 }
 
 img{
@@ -20,6 +24,20 @@ img{
     justify-content: space-between;
     flex-direction: column;
 }
+
+.gotopbtn{
+    position: fixed;
+    width: 50px;
+    height: 50px;
+    background: #08073A;
+    bottom: 100px;
+    right: 30px;
+    text-decoration: none;
+    text-align: center;
+    line-height: 50px;
+    color: white;
+    font-size: 22px;
+}
 /* ****NAVIGATION START*** */
 
 .search{
@@ -31,8 +49,12 @@ img{
     font-size: .75rem;
 }
 
+.navbar input{
+    font-size: 1rem;
+}
+
 .navbar ul li{
-    margin-left: 1.5em;
+    margin-left: 1.5em;;
 }
 
 .navbar-light .navbar-toggler {
@@ -42,20 +64,21 @@ img{
 }
 
 .image{
-    height: 60vh;
+    height: 50vh;
 }
 
 /* NAVIGATION TYPOGRAPHY */
 .carousel-caption{
-    top: 30%;
+    top: 20%;
     text-align: left;
 }
 
 .carousel-caption h5{
     text-transform: uppercase;
-    color: rgba(8, 7, 58, 0.75);;
+    color: rgba(8, 7, 58, 0.75);
     font-family: Noto Sans;
     line-height: 28px;
+    font-size: 1.5rem;
 }
 
 .carousel-caption p{
@@ -69,6 +92,10 @@ img{
     color: rgba(8, 7, 58, 0.75);
     font-size: .75rem;
     margin-top: 1em;
+}
+.carousel-caption button:hover{
+    background: #08073A;
+    color: white;
 }
 
 /* ****NAVIGATION ENDS**** */
@@ -114,7 +141,6 @@ img{
     width: 40px;
     height: 40px;
     padding: 4px;
-    color: red;
     position: relative;
     top: 90px;
     left: -15px;
@@ -261,7 +287,7 @@ img{
 }
 
 .testimonial h4{
-    font-size: 2.5rem;
+    font-size: 1.7rem;
     color: #08073A;
 }
 
@@ -361,6 +387,14 @@ button:focus {
     border-bottom: 1px solid #BDBDBD;
     margin-right: 3em;
 }
+
+.products-page-aside a{
+    color: #504f4f;
+}
+.products-page-aside a:hover{
+    color: #08073A;
+}
+
 .products-page-main img{
     width: 100px;
     height: 100px;
@@ -383,6 +417,9 @@ button:focus {
     width: 100%;
     height: 250px;
     margin-bottom: 1em;
+}
+.product-interest-image img:hover{
+    box-shadow: 0px 4px 4px rgba(15, 13, 98, 0.5);
 }
 
 .product-interest-text{
@@ -435,10 +472,59 @@ button:focus {
 .products-page-main a{
     color: #504f4f;
 }
+
+
+.text_change{
+    text-decoration: underline;
+    color: #08073A;
+    font-weight: 700;
+    font-size: 1.2rem;
+}
+
+.about h1{
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #08073A;
+    margin-top: 3em;
+    margin-bottom: 1.5em;
+}
+.about img{
+    margin-top: 1em;
+}
 /* ****LAYOUT ENDS**** */
 
 
 @media (min-width:992px){
+    .navbar ul li{
+        font-size: 1.5rem;
+    }
+    .carousel-caption{
+        top: 30%;
+        text-align: left;
+    }
+    
+    .carousel-caption h5{
+        text-transform: uppercase;
+        color: rgba(8, 7, 58, 0.75);
+        font-family: Noto Sans;
+        line-height: 45px;
+        font-size: 3rem;
+    }
+    
+    .carousel-caption p{
+        font-size: 1.5rem;
+        margin-top: .75em;
+    }
+    
+    .carousel-caption button{
+        background: white;
+        border-radius: 0;
+        color: rgba(8, 7, 58, 0.75);
+        font-size: 1.2rem;
+        margin-top: 1em;
+        font-weight: 700;
+    }
+    
     .image{
         height: 80vh;
     }
@@ -455,14 +541,28 @@ button:focus {
     .service-items{
         margin-top: 5em;
     }
+    .service-items p{
+        font-size: 1rem;
+    }
     .ser-1{
         flex-direction: row;
     }
     .ser-2{
         flex-direction: row;
     }
+
+    .products{
+        max-width: 100%;
+    }
     .products h1{
         font-size: 2.5rem;
+        margin-top: 2em;
+    }
+    .products h3{
+        font-size: 1.4rem;
+    }
+    .products p{
+        font-size: 1.2rem;
     }
     .prod-1{
         flex-direction: row;
@@ -482,7 +582,13 @@ button:focus {
         padding-top: 7em;
     }
     .comprehensive h1{
+        font-size: 2.2rem;
+    }
+    .comprehensive h3{
         font-size: 2rem;
+    }
+    .comprehensive p{
+        font-size: 1.2rem;
     }
     .comprehensive-all{
         flex-direction: row;
@@ -499,6 +605,15 @@ button:focus {
     }
     .contact h1{
         font-size: 2.5rem;
+    }
+    .contact p{
+        font-size: 1.3rem;
+    }
+    .contact label{
+        font-size: 1.5rem;
+    }
+    .contact button{
+        font-size: 1.5rem;
     }
     .contact form{
         width: 70%;
@@ -546,15 +661,37 @@ button:focus {
         flex-direction: row;
     }
     .products-page-aside{
-        width: 25%;
+        width: 30%;
     }
     .products-page-main{
         width: 65%;
+    }
+    .page-main{
         flex-direction: row;
     }
-    .product-interest-image{
-        flex-direction: row;
+    .product-1{
+        width: 22%;
     }
+    .product-2{
+        width: 22%;
+        margin-top: 1em;
+    }
+    .product-3{
+        width: 22%;
+        margin-top: 1em;
+    }
+    .product-4{
+        width: 22%;
+        margin-top: 1em;
+    }
+
+
+    .product-interest-image img{
+        max-width: 80%;
+        height: 200px;
+        margin-bottom: 1em;
+    }
+
 
     .form-bg{
         width:60%;
@@ -581,5 +718,9 @@ button:focus {
     .service-item-card p{
         padding: 1em;
         margin: 0;
+    }
+
+    .about img{
+        width: 50%;
     }
 }
