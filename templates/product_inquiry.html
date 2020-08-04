@@ -1,7 +1,7 @@
 {% extends 'layout.html' %}
 {% block content %}
 <section class="product-in flex">
-    <div class="product-in-main">
+    <div class="product-in-main container">
         <h1>Product Inquiry</h1>
         <p>Got questions about Our Product ? Would you like to discuss a potential
     
@@ -19,35 +19,32 @@
 <section class="container">
     <form class="form-bg">
         <h3>Drop a Message</h3>
-        <div class="form-row">
-            <div class="form-group col-md-6">
-                <label for="inputFirstName">First Name</label>
-                <input type="text" class="form-control" id="inputFirstName">
-            </div>
-            <div class="form-group col-md-6">
-                <label for="inputLastName">Last Name</label>
-                <input type="text" class="form-control" id="inputLastName">
-            </div>
+
+        <div class="form-group flex">
+            <label for="firstname">First Name</label>
+            <input type="text" name="firstname" class="form-control" id="firstname">
         </div>
-        <div class="form-group">
+        <div class="form-group flex">
+            <label for="lastname">Last Name</label>
+            <input type="text" name="lastname" class="form-control" id="lastname">
+        </div>
+        <div class="form-group flex">
             <label for="inputAddress">E-mail Address</label>
             <input type="email" class="form-control" id="inputAddress">
         </div>
-        <div class="form-row">
-            <div class="form-group col-md-6">
-                <label for="inputPhone">Phone Number</label>
-                <input type="text" class="form-control" id="inputPhone">
-            </div>
-            <div class="form-group col-md-6">
-                <label for="inputCompany">Company(Optional)</label>
-                <input type="text" class="form-control" id="inputCompany">
-            </div>
+        <div class="form-group flex">
+            <label for="phone">Phone Number</label>
+            <input type="text" name="phone" class="form-control" id="phone">
         </div>
-        <div class="form-group">
+        <div class="form-group flex">
+            <label for="company">Company(Optional)</label>
+            <input type="text" name="company" class="form-control" id="company">
+        </div>
+        <div class="form-group flex">
             <label for="exampleFormControlTextarea1">Additional Note(Include Product Name)</label>
             <textarea class="form-control" id="exampleFormControlTextarea1" rows="4"></textarea>
         </div>
-        <button type="submit" class="btn">Sign in</button>
+        <button type="submit" class="btn">Submit</button>
     </form>
 </section>
 

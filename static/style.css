@@ -751,26 +751,42 @@ button:focus {
 
 
     .form-bg{
-        width:60%;
-        margin: 0 auto;
+        width:40%;
+        margin-left: 2.2em;
+        margin-top: -13em;
         padding: 2em;
         padding-bottom: 3.5em;
+    }
+    .form-group{
+        flex-direction: row;
+    }
+    .form-group label{
+        width: 45%;
+    }
+    .form-group input{
+        width: 55%;
+    }
+    .form-group textarea{
+        width: 55%;
     }
 
     .product-in{
         flex-direction: row;
         margin: 3em;
-        margin-left: 18em;
     }
 
     .product-in-main{
-        width: 45%;
+        width: 50%;
+        margin-left: 3.2em;
     }
     .product-in-aside{
         width: 45%;
     }
     .product-in-aside img{
+        margin-top: 5em;
         margin-bottom: 1em;
+        width: 300px;
+        height: 300px;
     }
     .service-item-card p{
         padding: 1em;
