@@ -13,7 +13,7 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
         rel="stylesheet" />
     <link rel="stylesheet" href="{{url_for('static', filename='style.css')}}">
-    <title>Document</title>
+    <title>Pendalton Integrated Services</title>
 </head>
 
 <body>
@@ -24,12 +24,12 @@
                 <span class="navbar-toggler-icon"></span>
             </button>
             <form class="form-inline my-2 my-lg-0">
-                <input class="form-control mr-sm-2 search" type="search" placeholder="What can we help you with"
-                    aria-label="Search">
+                <i class="fas fa-search"></i>
+                <input class="form-control mr-sm-2 search" type="search"  placeholder="What can we help you find?" aria-label="Search">
             </form>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
 
-                <ul class="navbar-nav ml-auto">
+                <ul class="navbar-nav ml-auto mr-5">
                     <li class="nav-item active">
                         <a class="nav-link" href="{{ url_for('home') }}">Home <span class="sr-only">(current)</span></a>
                     </li>
@@ -58,40 +58,53 @@
 
     <footer class="footer">
         <div class="container">
-            <h1>PENDALTON SECURITY SOLUTIONS</h1>
-            <div class="foot mt-4 flex">
-                <div class="foot-1">
-                    <ul class="foot-link">
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#">Products</a></li>
-                        <li><a href="#">Contact</a></li>
-                    </ul>
+            <div class="container1">
+                <h1>PENDALTON INTEGRATED SERVICES</h1>
+                <div class="foot mt-4 flex">
+                    <div class="foot-1">
+                        <ul class="foot-link">
+                            <li><a href="{{ url_for('home') }}">Home</a></li>
+                            <li><a href="{{ url_for('Access_Control') }}">Products</a></li>
+                            <li><a href="#services">Services</a></li>
+                            <li><a href="#contact">Contact</a></li>
+
+                        </ul>
+                    </div>
+                    <div class="foot-2">
+                        <p>About Us</p>
+                        <p>Pendalton Integrated Services Ltd Is an indigenous company founded in 2006 and has grown into
+                            a
+                            leading electronic security engineering company, renowned for its professionalism in
+                            handling
+                            security surveillance for individuals, and corporate bodies.</p>
+                    </div>
+                    <div class="foot-3">
+                        <p>Contact Us</p>
+                        <p>1, Oje/Kudirat Abiola Way, By Julie Estate Gate, Oregun, Ikeja, Lagos, Nigeria.</p>
+                        <ul>
+                            <li>+234 (0)1 4539609</li>
+                            <li>+234 (0)8032565388</li>
+                            <li>+234 (0)8056202607</li>
+                        </ul>
+                    </div>
                 </div>
-                <div class="foot-2">
-                    <h1>About Us</h1>
-                    <p>Pendalton Integrated Services Ltd Is an indigenous company founded in 2006 and has grown into a
-                        leading electronic security engineering company, renowned for its professionalism in handling
-                        security surveillance for individuals, and corporate bodies.</p>
+                <div class="footer-last flex">
+                    <p class="f1">ALL RESERVED RIGHTS</p>
+                    <div class="footso flex">
+                        <p class="f2">info@pendalton.com.ng <br> pendalton@live.com</p>
+                        <div class="footer-icons flex">
+                            <img class="ml-1 mr-3" src="../static/images/Vector(4).png" alt="">
+                            <img class="mr-3" src="../static/images/Group 48.png" alt="">
+                            <img class="" src="../static/images/Vector(5).png" alt="">
+                        </div>
+                    </div>
                 </div>
-                <div class="foot-3">
-                    <h1>Contact Us</h1>
-                    <p>1, Oje/Kudirat Abiola Way, By Julie Estate Gate, Oregun, Ikeja, Lagos, Nigeria.</p>
-                    <ul>
-                        <li>+234 (0)1 4539609</li>
-                        <li>+234 (0)8032565388</li>
-                        <li>+234 (0)8056202607</li>
-                    </ul>
-                </div>
-            </div>
-            <div class="footer-last">
-                <p>ALL RESERVED RIGHTS</p>
-                <p>info@pendalton.com.ng/ pendalton@live.com</p>
             </div>
         </div>
     </footer>
 
     <script src="https://apps.elfsight.com/p/platform.js" defer></script>
-    <div class="elfsight-app-134b3798-9355-456e-9095-6feafdf1a996 wapo"></div>
+    <div class="elfsight-app-134b3798-9355-456e-9095-6feafdf1a996 wapo"></div>  
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
         integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
@@ -111,8 +124,8 @@
                 mouseDrag: false,
                 loop: true,
                 autoplay: true,
-                autoplaySpeed: 6000,
-                smartSpeed: 6000,
+                autoplaySpeed: 2000,
+                smartSpeed: 2000,
                 margin: 2,
                 nav: true,
                 responsive: {
