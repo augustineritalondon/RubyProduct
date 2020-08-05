@@ -123,9 +123,6 @@
             $('.owl-carousel').owlCarousel({
                 mouseDrag: false,
                 loop: true,
-                autoplay: true,
-                autoplaySpeed: 2000,
-                smartSpeed: 2000,
                 margin: 2,
                 nav: true,
                 responsive: {
@@ -180,6 +177,29 @@
                     }
                     else {
                         $('.owl-item .show').parent().next().children('.item').addClass('next');
+                    }
+                }
+            });
+
+           
+
+            $('.owl-carousel .owlcar').owlCarousel({
+                mouseDrag: false,
+                loop: true,
+                autoplay: true,
+                autoplaySpeed: 2000,
+                smartSpeed: 2000,
+                margin: 2,
+                nav: true,
+                responsive: {
+                    0: {
+                        items: 1
+                    },
+                    600: {
+                        items: 1
+                    },
+                    1000: {
+                        items: 3
                     }
                 }
             });
