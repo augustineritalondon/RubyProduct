@@ -102,6 +102,8 @@ img{
 
 .carousel-caption p{
     font-size: .75rem;
+    font-style: normal;
+    font-weight: 400;
 }
 
 .carousel-caption button{
