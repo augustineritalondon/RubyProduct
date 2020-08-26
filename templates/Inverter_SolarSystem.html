@@ -5,12 +5,22 @@
     <aside class="products-page-aside">
         <div class="page-aside latest">
             <ul>
-                <li><a href="{{ url_for('products') }}">CCTV Survelliance</a></li>
+                <li>
+                    <a class="" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">CCTV Products <i class="fas fa-angle-down down"></i> </a>
+                </li>
+                <div class="collapse cstyle" id="collapseExample">
+                    <ul>
+                    <li> <a href="{{ url_for('products') }}"><strong> Hikvision </strong></a></li>
+                    <li> <a href="{{ url_for('CCTV_AnalogCameras') }}"> Hd Analog/Ip Cameras </a></li>
+                    <li> <a href="{{ url_for('CCTV_CovertCameras') }}">Covert Cameras</a></li>
+                    <li> <a href="{{ url_for('CCTV_DVRS') }}">DVRs</a></li>
+                    </ul>
+                </div>
                 <li><a href="{{ url_for('Pabx_intercom') }}">PABX/Intercom</a></li>
                 <li><a href="{{ url_for('Access_Control') }}">Access Control</a></li>
                 <li><a href="{{ url_for('Fire_Alarm') }}">Fire / Burglary Alarm</a></li>
-                <li class="text_change"><a href="{{ url_for('Inverter_SolarSystem') }}">Inverter & Solar System</a></li>
-                <li><a href="{{ url_for('Permitter') }}">Permitter Fencing</a></li>
+                <li><a href="{{ url_for('Inverter_SolarSystem') }}">Inverter & Solar System</a></li>
+                <li class="text_change"><a href="{{ url_for('Permitter') }}">Permitter Fencing</a></li>
             </ul>
         </div>
     </aside>
@@ -18,104 +28,43 @@
         <div class="page-main flex">
             <div class="product-1">
                 <a href="{{ url_for('product_inquiry') }}">
-                    <img src="../static/images/image 139.png" alt="">
-                    <p>GENUS 5KVA96V INVERTER</p>
+                    <img src="../static/images/image 219.png" alt="">
                 </a>
             </div>
             <div class="product-2">
                 <a href="{{ url_for('product_inquiry') }}">
-                    <img src="../static/images/image 145.png" alt="">
-                    <p>TAIYO SOLAR PANEL 100W</p>
-                </a>
-            </div>
-            <div class="product-3">
-                <a href="{{ url_for('product_inquiry') }}">
-                    <img src="../static/images/image 141.png" alt="">
-                    <p>EASTMAN 1450VA48V SOLAR HYBRID INVERTER</p>
-                </a>
-            </div>
-            <div class="product-4">
-                <a href="{{ url_for('product_inquiry') }}">
-                    <img src="../static/images/image 124.png" alt="">
-                    <p>FLAMES SOLAR PANEL 200W24V MONO</p>
+                    <img src="../static/images/image 205.png" alt="">
                 </a>
             </div>
         </div>
         <div class="page-main flex">
             <div class="product-4">
                 <a href="{{ url_for('product_inquiry') }}">
-                    <img src="../static/images/image 142.png" alt="">
-                    <p>IPOWERPLUS 3KVA INVERTER - TRANSFORMER BASED</p>
-                </a>
-            </div>
-            <div class="product-4">
-                <a href="{{ url_for('product_inquiry') }}">
-                    <img src="../static/images/image 155.png" alt="">
-                    <p>SOLAR PANEL 50W FOR 17.6V</p>
-                </a>
-            </div>
-            <div class="product-4">
-                <a href="{{ url_for('product_inquiry') }}">
-                    <img src="../static/images/image 140.png" alt="">
-                    <p>IPOWERPLUS 5KVA48V INVERTER + 80A MPPT SOLAR CHARGE CONTROLLER</p>
-                </a>
-            </div>
-            <div class="product-4">
-                <a href="{{ url_for('product_inquiry') }}">
-                    <img src="../static/images/image 143.png" alt="">
-                    <p>SOLAR PANEL 300W FOR 35.2V - MONO</p>
-                </a>
-            </div>
-        </div>
-        <div class="page-main flex">
-            <div class="product-4">
-                <a href="{{ url_for('product_inquiry') }}">
-                    <img src="../static/images/image 147.png" alt="">
-                    <p>Monocrystalline Solar Pine 300WTT</p>
-                </a>
-            </div>
-            <div class="product-4">
-                <a href="{{ url_for('product_inquiry') }}">
-                    <img src="../static/images/image 151.png" alt="">
-                    <p>KARTEL XD-W 5KVA48V Pure Sine Wave Inverter</p>
-                </a>
-            </div>
-            <div class="product-4">
-                <a href="{{ url_for('product_inquiry') }}">
-                    <img src="../static/images/image 148.png" alt="">
-                    <p>SOLAR PANEL 20W FOR 17.6V</p>
-                </a>
-            </div>
-            <div class="product-4">
-                <a href="{{ url_for('product_inquiry') }}">
-                    <img src="../static/images/image 152.png" alt="">
-                    <p>IPOWER ASCEND INVERTER – 2KVA24V-</p>
-                </a>
-            </div>
-        </div>
-        <div class="page-main flex">
-            <div class="product-4">
-                <a href="{{ url_for('product_inquiry') }}">
-                    <img src="../static/images/image 149.png" alt="">
-                    <p>SUKAM SOLAR PANEL 125W12V</p>
-                </a>
-            </div>
-            <div class="product-4">
-                <a href="{{ url_for('product_inquiry') }}">
-                    <img src="../static/images/image 153.png" alt="">
-                    <p>IPOWERPLUS MATRIX 1KVA 12V INVERTER</p>
-                </a>
-            </div>
-            <div class="product-4">
-                <a href="{{ url_for('product_inquiry') }}">
-                    <img src="../static/images/image 150.png" alt="">
-                    <p>SOLAR PANEL 140W FOR 12V</p>
+                    <img src="../static/images/image 139.png" alt="">
                 </a>
             </div>
             <div class="product-4">
                 <a href="{{ url_for('product_inquiry') }}">
                     <img src="../static/images/image 154.png" alt="">
-                    <p>MPOWER ONLINE INVERTER 6KVA180V</p>
+                </a>
+            </div>
+        </div>
+        <div class="page-main flex">
+            <div class="product-4">
+                <a href="{{ url_for('product_inquiry') }}">
+                    <img src="../static/images/image 140.png" alt="">
+                </a>
+            </div>
+            <div class="product-4">
+                <a href="{{ url_for('product_inquiry') }}">
+                    <img src="../static/images/image 201.png" alt="">
+                </a>
+            </div>
+        </div>
+        <div class="page-main flex">
+            <div class="product-4">
+                <a href="{{ url_for('product_inquiry') }}">
+                    <img src="../static/images/image 218.png" alt="">
                 </a>
             </div>
         </div>
@@ -130,10 +79,9 @@
             <div class="owl-carousel owl-theme owl-loaded">
                 <div class="owl-stage-outer">
                     <div class="owl-stage product-interest-image">
-                        <div class="owl-item"><img src="../static/images/image 17.png" alt=""></div>
+                        <div class="owl-item"><img src="../static/images/image 54.png" alt=""></div>
                         <div class="owl-item"><img src="../static/images/image 66.png" alt=""></div>
                         <div class="owl-item"><img src="../static/images/image 30.png" alt=""></div>
-                        <div class="owl-item"><img src="../static/images/image 17.png" alt=""></div>
                     </div>
                 </div>
                 <div class="owl-nav">
@@ -152,29 +100,13 @@
 
 <section class="container product-interest-text">
     <p>
-        CCTV has grown intensely over the last few years due to the helpful impact that it has had on both public and
-        business organizations.
+        The success of a DC to AC power inverter installation depends mainly on the methods and materials used for the installation.
     </p>
     <p>
-        Apart from CCTV installation Pendalton Integrated Services Limited, have now moved to both sales of CCTV
-        products and maintenance's. We also now work extensively with IP CCTV cameras and CCTV mobile surveillance. We
-        offer a variety of services from supplies and CCTV installation to repairs of CCTV systems nationwide.
+        Low DC input voltage inverters (12 or 24 Volts DC) require high DC input currents.  For example, to provide a service of 15 Amperes at 120 Volts AC (1800 Watts) from a 12 Volt battery, the DC current will approach 180 Amperes!  How can we supply such a high current to the inverter safely and efficiently?
     </p>
     <p>
-        Our team are trained to a high standard and are able to provide CCTV installations, repairs and maintenance to
-        many brands of CCTV systems; providing low cost solutions for any upgrades or repairs to faulty systems.
-        Pendalton Integrated Services Limited complete a full CCTV maintenance check, ensuring that all CCTV cameras are
-        cleaned and are functioning as they should.
-    </p>
-    <p>
-        Here at Pendalton Integrated Services Limited we have created a recognized track record in providing a range of
-        flexible, cost effective CCTV systems and solutions to address your specific security surveillance needs. Our
-        trained team has many years experience within this industry; helping our customers to find the best security
-        cameras and other CCTV gadgets to keep their premises secure.
-    </p>
-    <p>
-        Our CCTV system can be viewed remotely anywhere in the world with your iPad, Laptop, iPhone, Android, etc
-        We provide and also install CCTV systems to both commercial and domestic sectors throughout Nigeria.
+        We provide Inverter installation services in Lagos, and other parts of Nigeria. We also are also one of the profound Inverter installation company in Lagos and other parts of Nigeria. We also offer very affordable Inverter systems in Lagos and other parts of Nigeria.
     </p>
 </section>
 {% endblock content %}

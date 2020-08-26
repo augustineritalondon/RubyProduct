@@ -5,7 +5,17 @@
     <aside class="products-page-aside">
         <div class="page-aside latest">
             <ul>
-                <li><a href="{{ url_for('products') }}">CCTV Survelliance</a></li>
+                <li>
+                    <a class="" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">CCTV Products <i class="fas fa-angle-down down"></i> </a>
+                </li>
+                <div class="collapse cstyle" id="collapseExample">
+                    <ul>
+                    <li> <a href="{{ url_for('products') }}"><strong> Hikvision </strong></a></li>
+                    <li> <a href="{{ url_for('CCTV_AnalogCameras') }}"> Hd Analog/Ip Cameras </a></li>
+                    <li> <a href="{{ url_for('CCTV_CovertCameras') }}">Covert Cameras</a></li>
+                    <li> <a href="{{ url_for('CCTV_DVRS') }}">DVRs</a></li>
+                    </ul>
+                </div>
                 <li><a href="{{ url_for('Pabx_intercom') }}">PABX/Intercom</a></li>
                 <li><a href="{{ url_for('Access_Control') }}">Access Control</a></li>
                 <li><a href="{{ url_for('Fire_Alarm') }}">Fire / Burglary Alarm</a></li>
@@ -18,25 +28,27 @@
         <div class="page-main flex">
             <div class="product-1">
                 <a href="{{ url_for('product_inquiry') }}">
-                    <img src="../static/images/image 168.png" alt="">
+                    <img src="../static/images/image 202.png" alt="">
                     <p></p>
                 </a>
             </div>
-            <div class="product-2">
+            <div class="product-1">
                 <a href="{{ url_for('product_inquiry') }}">
-                    <img src="../static/images/image 166.png" alt="">
+                    <img src="../static/images/Group 47.png" alt="">
                     <p></p>
                 </a>
             </div>
-            <div class="product-3">
+        </div>
+        <div class="page-main flex">
+            <div class="product-1">
                 <a href="{{ url_for('product_inquiry') }}">
-                    <img src="../static/images/image 167.png" alt="">
+                    <img src="../static/images/Group 45.png" alt="">
                     <p></p>
                 </a>
             </div>
-            <div class="product-4">
+            <div class="product-1">
                 <a href="{{ url_for('product_inquiry') }}">
-                    <img src="../static/images/image 164.png" alt="">
+                    <img src="../static/images/image 203.png" alt="">
                     <p></p>
                 </a>
             </div>
@@ -44,86 +56,17 @@
         <div class="page-main flex">
             <div class="product-4">
                 <a href="{{ url_for('product_inquiry') }}">
-                    <img src="../static/images/image 163.png" alt="">
+                    <img src="../static/images/image 43.png" alt="">
                     <p></p>
                 </a>
             </div>
             <div class="product-4">
                 <a href="{{ url_for('product_inquiry') }}">
-                    <img src="../static/images/image 171.png" alt="">
-                    <p></p>
-                </a>
-            </div>
-            <div class="product-4">
-                <a href="{{ url_for('product_inquiry') }}">
-                    <img src="../static/images/image 165.png" alt="">
-                    <p></p>
-                </a>
-            </div>
-            <div class="product-4">
-                <a href="{{ url_for('product_inquiry') }}">
-                    <img src="../static/images/image 169.png" alt="">
+                    <img src="../static/images/image 206.png" alt="">
                     <p></p>
                 </a>
             </div>
         </div>
-        <div class="page-main flex">
-            <div class="product-4">
-                <a href="{{ url_for('product_inquiry') }}">
-                    <img src="../static/images/image 170.png" alt="">
-                    <p></p>
-                </a>
-            </div>
-            <!-- <div>
-                <a href="{{ url_for('product_inquiry') }}">
-                    <img src="../static/images/image 20.png" alt="">
-                    <p>Hikvision DS-2CE12DOT-PIRXF Turbo HD Bullet
-                </a>
-                PIR Siren</p>
-            </div>
-            <div>
-                <a href="{{ url_for('product_inquiry') }}">
-                    <img src="../static/images/image 22(1).png" alt="">
-                    <p>Hikvision HD720P Vari-focal IR Bullet Camera DS-2CE16C2T-</p>
-                </a>
-            </div>
-            <div>
-                <a href="{{ url_for('product_inquiry') }}">
-                    <img src="../static/images/image 25(1).png" alt="">
-                    <p>Hikvision Turbo 1080p HD Vari Focal Dome
-                </a>
-                Camera DS-</p>
-            </div>
-        </div> -->
-        <!-- <div>
-            <div>
-                <a href="{{ url_for('product_inquiry') }}">
-                    <img src="../static/images/image 19.png" alt="">
-                    <p>Hikvision DS-2CE16DOT-IRE 1080p POC Bullet
-                </a>
-                Camera</p>
-            </div>
-            <div>
-                <a href="{{ url_for('product_inquiry') }}">
-                    <img src="../static/images/image 20(2).png" alt="">
-                    <p>Hikvision DS-2CE12DOT-PIRXF Turbo HD Bullet
-                </a>
-                PIR Siren</p>
-            </div>
-            <div>
-                <a href="{{ url_for('product_inquiry') }}">
-                    <img src="../static/images/image 22.png" alt="">
-                    <p>Hikvision HD720P Vari-focal IR Bullet Camera DS-2CE16C2T-</p>
-                </a>
-            </div>
-            <div>
-                <a href="{{ url_for('product_inquiry') }}">
-                    <img src="../static/images/image 25(2).png" alt="">
-                    <p>Hikvision Turbo 1080p HD Vari Focal Dome
-                </a>
-                Camera DS-</p>
-            </div>
-        </div> -->
     </div>
 </section>
 
@@ -135,10 +78,9 @@
             <div class="owl-carousel owl-theme owl-loaded">
                 <div class="owl-stage-outer">
                     <div class="owl-stage product-interest-image">
-                        <div class="owl-item"><img src="../static/images/image 17.png" alt=""></div>
+                        <div class="owl-item"><img src="../static/images/image 54.png" alt=""></div>
                         <div class="owl-item"><img src="../static/images/image 66.png" alt=""></div>
                         <div class="owl-item"><img src="../static/images/image 30.png" alt=""></div>
-                        <div class="owl-item"><img src="../static/images/image 17.png" alt=""></div>
                     </div>
                 </div>
                 <div class="owl-nav">
@@ -157,29 +99,19 @@
 
 <section class="container product-interest-text">
     <p>
-        CCTV has grown intensely over the last few years due to the helpful impact that it has had on both public and
-        business organizations.
+        We always maintain the maximum engineering standards, thus ensuring a renowned quality of installation, backed up by the same standard of after sales care, making our name the envy of our competitors. Our trained gate engineers are experienced, friendly and will install your gates or barrier system with ease.
     </p>
     <p>
-        Apart from CCTV installation Pendalton Integrated Services Limited, have now moved to both sales of CCTV
-        products and maintenance's. We also now work extensively with IP CCTV cameras and CCTV mobile surveillance. We
-        offer a variety of services from supplies and CCTV installation to repairs of CCTV systems nationwide.
+        Pendalton integrated services has developed a range of driveway gates fabricated using both steel and Iron, stainless designs suitable for domestic and commercial properties.
     </p>
     <p>
-        Our team are trained to a high standard and are able to provide CCTV installations, repairs and maintenance to
-        many brands of CCTV systems; providing low cost solutions for any upgrades or repairs to faulty systems.
-        Pendalton Integrated Services Limited complete a full CCTV maintenance check, ensuring that all CCTV cameras are
-        cleaned and are functioning as they should.
+        Our teams are all trained to a high engineering standard. Our engineers take great pride in providing all our clientele, both domestic and commercial, with an expert, efficient and complete gate and barrier installation service backed by an excellent after sales service.
     </p>
     <p>
-        Here at Pendalton Integrated Services Limited we have created a recognized track record in providing a range of
-        flexible, cost effective CCTV systems and solutions to address your specific security surveillance needs. Our
-        trained team has many years experience within this industry; helping our customers to find the best security
-        cameras and other CCTV gadgets to keep their premises secure.
+        We use computerization products that have been manufactured to the highest engineering standards. Our engineers incorporate new technologies and design innovations in all of our gate installations; this ensures we always provide the best service possible.
     </p>
     <p>
-        Our CCTV system can be viewed remotely anywhere in the world with your iPad, Laptop, iPhone, Android, etc
-        We provide and also install CCTV systems to both commercial and domestic sectors throughout Nigeria.
+        Our team of skilled engineers has a vast technical knowledge and experience of automatic gates, sliding gates and barrier systems. We are able to competently work on any installation or access control system from any manufacturer or installer.
     </p>
 </section>
 {% endblock content %}

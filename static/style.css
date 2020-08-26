@@ -480,6 +480,7 @@ button:focus {
 
 .products-page-aside a{
     color: #504f4f;
+    font-size: 15px;
 }
 .products-page-aside a:hover{
     color: #08073A;
@@ -593,6 +594,7 @@ button:focus {
     height: 15px;
     flex-direction: row;
 }
+
 
 
 /* ****LAYOUT ENDS**** */
@@ -794,33 +796,35 @@ button:focus {
         flex-direction: row;
     }
     .products-page-aside{
-        width: 30%;
+        width: 40%;
     }
     .products-page-main{
-        width: 65%;
+        width: 60%;
     }
     .page-main{
         flex-direction: row;
     }
+    .product-1 img{
+        width: 130px;
+        height: 130px;
+    }
     .product-1{
-        width: 22%;
+        width: 40%;
+        margin: 0 auto;
+        margin-top: .75em;
     }
     .product-2{
-        width: 22%;
-        margin-top: 1em;
-    }
-    .product-3{
-        width: 22%;
+        width: 40%;
+        margin: 0 auto;
         margin-top: 1em;
     }
     .product-4{
-        width: 22%;
+        width: 45%;
         margin-top: 1em;
     }
 
-
     .product-interest-image img{
-        max-width: 80%;
+        max-width: 60%;
         height: 200px;
         margin-bottom: 1em;
     }
@@ -871,6 +875,14 @@ button:focus {
 
     .about img{
         width: 50%;
+    }
+    .cstyle ul li a{
+        color: rgb(141, 141, 137)!important;
+        font-size: 14px!important;
+    }
+    .down{
+        float: right;
+        margin-top: 1em;
     }
 }
 

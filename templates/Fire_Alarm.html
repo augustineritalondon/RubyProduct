@@ -5,12 +5,22 @@
     <aside class="products-page-aside">
         <div class="page-aside latest">
             <ul>
-                <li><a href="{{ url_for('products') }}">CCTV Survelliance</a></li>
+                <li>
+                    <a class="" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">CCTV Products <i class="fas fa-angle-down down"></i> </a>
+                </li>
+                <div class="collapse cstyle" id="collapseExample">
+                    <ul>
+                    <li> <a href="{{ url_for('products') }}"><strong> Hikvision </strong></a></li>
+                    <li> <a href="{{ url_for('CCTV_AnalogCameras') }}"> Hd Analog/Ip Cameras </a></li>
+                    <li> <a href="{{ url_for('CCTV_CovertCameras') }}">Covert Cameras</a></li>
+                    <li> <a href="{{ url_for('CCTV_DVRS') }}">DVRs</a></li>
+                    </ul>
+                </div>
                 <li><a href="{{ url_for('Pabx_intercom') }}">PABX/Intercom</a></li>
                 <li><a href="{{ url_for('Access_Control') }}">Access Control</a></li>
-                <li class="text_change"><a href="{{ url_for('Fire_Alarm') }}">Fire / Burglary Alarm</a></li>
+                <li><a href="{{ url_for('Fire_Alarm') }}">Fire / Burglary Alarm</a></li>
                 <li><a href="{{ url_for('Inverter_SolarSystem') }}">Inverter & Solar System</a></li>
-                <li><a href="{{ url_for('Permitter') }}">Permitter Fencing</a></li>
+                <li class="text_change"><a href="{{ url_for('Permitter') }}">Permitter Fencing</a></li>
             </ul>
         </div>
     </aside>
@@ -18,104 +28,48 @@
         <div class="page-main flex">
             <div class="product-1">
                 <a href="{{ url_for('product_inquiry') }}">
-                    <img src="../static/images/image 121.png" alt="">
-                    <p>12V100AH LEOCH GEL BATTERY-LPG12-100S</p>
+                    <img src="../static/images/image 210.png" alt="">
                 </a>
             </div>
-            <div class="product-2">
+            <div class="product-1">
                 <a href="{{ url_for('product_inquiry') }}">
-                    <img src="../static/images/image 122.png" alt="">
-                    <p>COSMOS 6FM 7.5AMP 12V GEL BATTERY</p>
-                </a>
-            </div>
-            <div class="product-3">
-                <a href="{{ url_for('product_inquiry') }}">
-                    <img src="../static/images/image 123.png" alt="">
-                    <p>GENUS INVERTER BATTERY 150AH12V SMF</p>
-                </a>
-            </div>
-            <div class="product-4">
-                <a href="{{ url_for('product_inquiry') }}">
-                    <img src="../static/images/image 124.png" alt="">
-                    <p>EASTMAN INVERTER TUBULAR BATTERY 200AH12V</p>
+                    <img src="../static/images/image 211.png" alt="">
                 </a>
             </div>
         </div>
         <div class="page-main flex">
-            <div class="product-4">
+            <div class="product-1">
                 <a href="{{ url_for('product_inquiry') }}">
-                    <img src="../static/images/image 125.png" alt="">
-                    <p>GENUS TUBULAR BATTERY 220AH12V INVOMAX WETCELL</p>
+                    <img src="../static/images/image 215.png" alt="">
                 </a>
             </div>
-            <div class="product-4">
+            <div class="product-1">
                 <a href="{{ url_for('product_inquiry') }}">
-                    <img src="../static/images/image 137.png" alt="">
-                    <p>240V100A PWM SOLAR CHARGE CONTROLLER</p>
-                </a>
-            </div>
-            <div class="product-4">
-                <a href="{{ url_for('product_inquiry') }}">
-                    <img src="../static/images/image 127.png" alt="">
-                    <p>LEOCH 200AH12V INVERTER BATTERY</p>
-                </a>
-            </div>
-            <div class="product-4">
-                <a href="{{ url_for('product_inquiry') }}">
-                    <img src="../static/images/image 128.png" alt="">
-                    <p>Luminous 200Ah12V Deep Cycle, VRLA SMF Battery – New, Original Fortified Luminous Battery in Blue Colour</p>
+                    <img src="../static/images/image 212.png" alt="">
                 </a>
             </div>
         </div>
         <div class="page-main flex">
-            <div class="product-4">
+            <div class="product-1">
                 <a href="{{ url_for('product_inquiry') }}">
-                    <img src="../static/images/image 129.png" alt="">
-                    <p>Luminous 220Ah12V Inverlast Tall Tubular Battery</p>
+                    <img src="../static/images/image 216.png" alt="">
                 </a>
             </div>
-            <div class="product-4">
+            <div class="product-1">
                 <a href="{{ url_for('product_inquiry') }}">
-                    <img src="../static/images/image 138.png" alt="">
-                    <p>SOLAR-Charger Controller-MT4860</p>
-                </a>
-            </div>
-            <div class="product-4">
-                <a href="{{ url_for('product_inquiry') }}">
-                    <img src="../static/images/image 131.png" alt="">
-                    <p>LUMINOUS INVERTER BATTERY 200AH12V DRY CELL</p>
-                </a>
-            </div>
-            <div class="product-4">
-                <a href="{{ url_for('product_inquiry') }}">
-                    <img src="../static/images/image 132.png" alt="">
-                    <p>Mercury 200AM12V Deep Cycle Inverter Battery</p>
+                    <img src="../static/images/image 213.png" alt="">
                 </a>
             </div>
         </div>
         <div class="page-main flex">
-            <div class="product-4">
+            <div class="product-1">
                 <a href="{{ url_for('product_inquiry') }}">
-                    <img src="../static/images/image 133.png" alt="">
-                    <p>MPOWER INVERTER BATTERY 200AH</p>
+                    <img src="../static/images/image 214.png" alt="">
                 </a>
             </div>
-            <div class="product-4">
+            <div class="product-1">
                 <a href="{{ url_for('product_inquiry') }}">
-                    <img src="../static/images/image 134.png" alt="">
-                    <p>QUANTA INVERTER BATTERY 200AH12V</p>
-                </a>
-            </div>
-            <div class="product-4">
-                <a href="{{ url_for('product_inquiry') }}">
-                    <img src="../static/images/image 135.png" alt="">
-                    <p>MULTIPOWER DEEP CYCLE 150AH12V INVERTER BATTERY</p>
-                </a>
-            </div>
-            <div class="product-4">
-                <a href="{{ url_for('product_inquiry') }}">
-                    <img src="../static/images/image 136.png" alt="">
-                    <p>Exor deep cycle 12V 200AH inverter battery</p>
+                    <img src="../static/images/image 220.png" alt="">
                 </a>
             </div>
         </div>
@@ -130,10 +84,9 @@
             <div class="owl-carousel owl-theme owl-loaded">
                 <div class="owl-stage-outer">
                     <div class="owl-stage product-interest-image">
-                        <div class="owl-item"><img src="../static/images/image 17.png" alt=""></div>
+                        <div class="owl-item"><img src="../static/images/image 54.png" alt=""></div>
                         <div class="owl-item"><img src="../static/images/image 66.png" alt=""></div>
                         <div class="owl-item"><img src="../static/images/image 30.png" alt=""></div>
-                        <div class="owl-item"><img src="../static/images/image 17.png" alt=""></div>
                     </div>
                 </div>
                 <div class="owl-nav">
@@ -152,29 +105,19 @@
 
 <section class="container product-interest-text">
     <p>
-        CCTV has grown intensely over the last few years due to the helpful impact that it has had on both public and
-        business organizations.
+        Our reputation of installing successful fire/burglary alarm system for multinational companies as well as individuals, rate us amongst the best in the area of security management services in Nigeria.
     </p>
     <p>
-        Apart from CCTV installation Pendalton Integrated Services Limited, have now moved to both sales of CCTV
-        products and maintenance's. We also now work extensively with IP CCTV cameras and CCTV mobile surveillance. We
-        offer a variety of services from supplies and CCTV installation to repairs of CCTV systems nationwide.
+        We have attained this preferred rank service since; we understand our clients' needs and constantly develop unique and exciting solutions that allow us to consistently go beyond expectations.
     </p>
     <p>
-        Our team are trained to a high standard and are able to provide CCTV installations, repairs and maintenance to
-        many brands of CCTV systems; providing low cost solutions for any upgrades or repairs to faulty systems.
-        Pendalton Integrated Services Limited complete a full CCTV maintenance check, ensuring that all CCTV cameras are
-        cleaned and are functioning as they should.
+        Pendalton Integrated Services Limited is committed to the highest standards of service. We believe that security is a serious task and an important responsibility. The best security deploys adaptable solutions to address dynamic challenges and to counter reasonably predictable risks
     </p>
     <p>
-        Here at Pendalton Integrated Services Limited we have created a recognized track record in providing a range of
-        flexible, cost effective CCTV systems and solutions to address your specific security surveillance needs. Our
-        trained team has many years experience within this industry; helping our customers to find the best security
-        cameras and other CCTV gadgets to keep their premises secure.
+        Our company provides fire alarm, burglary alarm and access control systems that provide a safe and secure environment in which your staff and visitors can trust.
     </p>
     <p>
-        Our CCTV system can be viewed remotely anywhere in the world with your iPad, Laptop, iPhone, Android, etc
-        We provide and also install CCTV systems to both commercial and domestic sectors throughout Nigeria.
+        We provide a quality level of service to all of our customers.
     </p>
 </section>
 {% endblock content %}

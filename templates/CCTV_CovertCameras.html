@@ -5,12 +5,22 @@
     <aside class="products-page-aside">
         <div class="page-aside">
             <ul>
-                <h3>CCTV PRODUCTS</h3>
-                <li> <a href="{{ url_for('products') }}">Hikvision</a></li>
-                <li> <a href="{{ url_for('CCTV_AnalogCameras') }}"> Hd Analog Cameras </a></li>
-                <li> <a href="{{ url_for('CCTV_IpCameras') }}">Ip Cameras</a></li>
-                <li> <a href="{{ url_for('CCTV_CovertCameras') }}"><strong> Covert Cameras </strong></a></li>
-                <li> <a href="{{ url_for('CCTV_DVRS') }}">DVRs</a></li>
+                <li>
+                    <a class="" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">CCTV Products <i class="fas fa-angle-down down"></i> </a>
+                </li>
+                <div class="collapse cstyle" id="collapseExample">
+                    <ul>
+                    <li> <a href="{{ url_for('products') }}"><strong> Hikvision </strong></a></li>
+                    <li> <a href="{{ url_for('CCTV_AnalogCameras') }}"> Hd Analog/Ip Cameras </a></li>
+                    <li> <a href="{{ url_for('CCTV_CovertCameras') }}">Covert Cameras</a></li>
+                    <li> <a href="{{ url_for('CCTV_DVRS') }}">DVRs</a></li>
+                    </ul>
+                </div>
+                <li><a href="{{ url_for('Pabx_intercom') }}">PABX/Intercom</a></li>
+                <li><a href="{{ url_for('Access_Control') }}">Access Control</a></li>
+                <li><a href="{{ url_for('Fire_Alarm') }}">Fire / Burglary Alarm</a></li>
+                <li><a href="{{ url_for('Inverter_SolarSystem') }}">Inverter & Solar System</a></li>
+                <li class="text_change"><a href="{{ url_for('Permitter') }}">Permitter Fencing</a></li>
             </ul>
         </div>
     </aside>
@@ -18,104 +28,36 @@
         <div class="page-main flex">
             <div class="product-1">
                 <a href="{{ url_for('product_inquiry') }}">
-                    <img src="../static/images/image 109.png" alt="">
-                    <p>2MP Mini Covert Network Camera</p>
+                    <img src="../static/images/image 114.png" alt="">
                 </a>
             </div>
-            <div class="product-2">
-                <a href="{{ url_for('product_inquiry') }}">
-                    <img src="../static/images/image 110.png" alt="">
-                    <p>Covert Camera 1000TVL, CM1912</p>
-                </a>
-            </div>
-            <div class="product-3">
-                <a href="{{ url_for('product_inquiry') }}">
-                    <img src="../static/images/image 111.png" alt="">
-                    <p>Dahua 2MP Covert Pinhole Network Camera-Lens Unit (IPC-HUM8231-L5)</p>
-                </a>
-            </div>
-            <div class="product-4">
+            <div class="product-1">
                 <a href="{{ url_for('product_inquiry') }}">
                     <img src="../static/images/image 112.png" alt="">
-                    <p>Eagleye Pinhole 4in1 Covert Camera - 720P</p>
                 </a>
             </div>
         </div>
         <div class="page-main flex">
-            <div class="product-4">
+            <div class="product-1">
                 <a href="{{ url_for('product_inquiry') }}">
-                    <img src="../static/images/image 113.png" alt="">
-                    <p>Hikvision Covert Camera DS-2CS54C7T-PH</p>
+                    <img src="../static/images/image 173.png" alt="">
                 </a>
             </div>
-            <div class="product-4">
+            <div class="product-1">
                 <a href="{{ url_for('product_inquiry') }}">
-                    <img src="../static/images/image 114.png" alt="">
-                    <p>Hikvision DS-2CS54C8T-PH 1MP Covert Camera</p>
-                </a>
-            </div>
-            <div class="product-4">
-                <a href="{{ url_for('product_inquiry') }}">
-                    <img src="../static/images/image 115.png" alt="">
-                    <p>Hikvision DS-2CS54D8T-PH 2MP Covert Camera</p>
-                </a>
-            </div>
-            <div class="product-4">
-                <a href="{{ url_for('product_inquiry') }}">
-                    <img src="../static/images/image 116.png" alt="">
-                    <p>LTS CM1922T Platinum HD-TVI Covert Camera 2.1MP</p>
+                    <img src="../static/images/image 182.png" alt="">
                 </a>
             </div>
         </div>
         <div class="page-main flex">
-            <div class="product-4">
+            <div class="product-1">
                 <a href="{{ url_for('product_inquiry') }}">
-                    <img src="../static/images/image 117.png" alt="">
-                    <p>OZtrail Covert 16MP Trail Camera</p>
+                    <img src="../static/images/image 187.png" alt="">
                 </a>
             </div>
-            <div class="product-4">
+            <div class="product-1">
                 <a href="{{ url_for('product_inquiry') }}">
-                    <img src="../static/images/image 118.png" alt="">
-                    <p>RECONYX HL2X HyperFire 2 720p License Plate Capture Camera, OD Green</p>
-                </a>
-            </div>
-            <div class="product-4">
-                <a href="{{ url_for('product_inquiry') }}">
-                    <img src="../static/images/image 119.png" alt="">
-                    <p>Securenet HD-S120 1080P AHD Covert CCTV Camera</p>
-                </a>
-            </div>
-            <div class="product-4">
-                <a href="{{ url_for('product_inquiry') }}">
-                    <img src="../static/images/image 120.png" alt="">
-                    <p>Sony Covert Pinhole Camera 3.7mm</p>
-                </a>
-            </div>
-        </div>
-        <div class="page-main flex">
-            <div class="product-4">
-                <a href="{{ url_for('product_inquiry') }}">
-                    <img src="../static/images/image 103.png" alt="">
-                    <p>Hikvision Speed dome 2 MP 20Xzoom 5 inch IP PTZ DS-</p>
-                </a>
-            </div>
-            <div class="product-4">
-                <a href="{{ url_for('product_inquiry') }}">
-                    <img src="../static/images/image 102.png" alt="">
-                    <p>Hikvision NETWORK VARI FOCAL DOME CAMERA DS-</p>
-                </a>
-            </div>
-            <div class="product-4">
-                <a href="{{ url_for('product_inquiry') }}">
-                    <img src="../static/images/image 104.png" alt="">
-                    <p>Hikvision Speed dome 2MP 20Xzoom 7 inch IP PTZ DS-2DE7220IW-AE</p>
-                </a>
-            </div>
-            <div class="product-4">
-                <a href="{{ url_for('product_inquiry') }}">
-                    <img src="../static/images/image 108.png" alt="">
-                    <p>Hikvision DS-2CD2045FWD-I 4 MP IR Fixed Bullet Network</p>
+                    <img src="../static/images/image 188.png" alt="">
                 </a>
             </div>
         </div>
@@ -130,10 +72,9 @@
             <div class="owl-carousel owl-theme owl-loaded">
                 <div class="owl-stage-outer">
                     <div class="owl-stage product-interest-image">
+                        <div class="owl-item"><img src="../static/images/image 54.png" alt=""></div>
                         <div class="owl-item"><img src="../static/images/image 17.png" alt=""></div>
-                        <div class="owl-item"><img src="../static/images/image 66.png" alt=""></div>
                         <div class="owl-item"><img src="../static/images/image 30.png" alt=""></div>
-                        <div class="owl-item"><img src="../static/images/image 17.png" alt=""></div>
                     </div>
                 </div>
                 <div class="owl-nav">

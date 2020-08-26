@@ -5,91 +5,70 @@
     <aside class="products-page-aside">
         <div class="page-aside latest">
             <ul>
-                <li><a href="{{ url_for('products') }}">CCTV Survelliance</a></li>
-                <li class="text_change"><a href="{{ url_for('Pabx_intercom') }}">PABX/Intercom</a></li>
+                <li>
+                    <a class="" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">CCTV Products <i class="fas fa-angle-down down"></i> </a>
+                </li>
+                <div class="collapse cstyle" id="collapseExample">
+                    <ul>
+                    <li> <a href="{{ url_for('products') }}"><strong> Hikvision </strong></a></li>
+                    <li> <a href="{{ url_for('CCTV_AnalogCameras') }}"> Hd Analog/Ip Cameras </a></li>
+                    <li> <a href="{{ url_for('CCTV_CovertCameras') }}">Covert Cameras</a></li>
+                    <li> <a href="{{ url_for('CCTV_DVRS') }}">DVRs</a></li>
+                    </ul>
+                </div>
+                <li><a href="{{ url_for('Pabx_intercom') }}">PABX/Intercom</a></li>
                 <li><a href="{{ url_for('Access_Control') }}">Access Control</a></li>
                 <li><a href="{{ url_for('Fire_Alarm') }}">Fire / Burglary Alarm</a></li>
                 <li><a href="{{ url_for('Inverter_SolarSystem') }}">Inverter & Solar System</a></li>
-                <li><a href="{{ url_for('Permitter') }}">Permitter Fencing</a></li>
+                <li class="text_change"><a href="{{ url_for('Permitter') }}">Permitter Fencing</a></li>
             </ul>
         </div>
     </aside>
+
     <div class="products-page-main">
         <div class="page-main flex">
-            <div class="product-1">
+            <div class="product-2">
                 <a href="{{ url_for('product_inquiry') }}">
                     <img src="../static/images/image 59.png" alt="">
-                    <p>Grandstream 6-Line WIFI Enabled IP Phone(GXP1760W)</p>
                 </a>
             </div>
             <div class="product-2">
                 <a href="{{ url_for('product_inquiry') }}">
-                    <img src="../static/images/image 60.png" alt="">
-                    <p>Grandstream 6-Line Enterprise IP Phone with POE(GXP2160)</p>
+                    <img src="../static/images/image 66.png" alt="">
                 </a>
             </div>
-            <div class="product-3">
-                <a href="{{ url_for('product_inquiry') }}">
-                    <img src="../static/images/image 62.png" alt="">
-                    <p>Grandstream GRP2612P Carrier Grade 2-Line IP Phone with PoE</p>
-                </a>
-            </div>
-            <div class="product-4">
+            <div class="product-2">
                 <a href="{{ url_for('product_inquiry') }}">
                     <img src="../static/images/image 64.png" alt="">
-                    <p>Panasonic IP Phone KX-NT553</p>
                 </a>
             </div>
         </div>
         <div class="page-main flex">
-            <div class="product-4">
+            <div class="product-2">
                 <a href="{{ url_for('product_inquiry') }}">
-                    <img src="../static/images/image 65.png" alt="">
-                    <p>Panasonic IP Phone KX-NT560</p>
+                    <img src="../static/images/image 198.png" alt="">
                 </a>
             </div>
-            <div class="product-4">
-                <a href="{{ url_for('product_inquiry') }}">
-                    <img src="../static/images/image 66.png" alt="">
-                    <p>Panasonic IP Phone KX-HDV230</p>
-                </a>
-            </div>
-            <div class="product-4">
-                <a href="{{ url_for('product_inquiry') }}">
-                    <img src="../static/images/image 68.png" alt="">
-                    <p>Panasonic KX-DT543 -24 Button 3-Line LCD Display Digital Proprietary Phone</p>
-                </a>
-            </div>
-            <div class="product-4">
-                <a href="{{ url_for('product_inquiry') }}">
-                    <img src="../static/images/image 67.png" alt="">
-                    <p>Panasonic KX-NT400 Proprietary IP Phone</p>
-                </a>
-            </div>
-        </div>
-        <div class="page-main flex">
-            <div class="product-4">
-                <a href="{{ url_for('product_inquiry') }}">
-                    <img src="../static/images/image 69.png" alt="">
-                    <p>Panasonic KX-UT133 VoIP SIP Phone</p>
-                </a>
-            </div>
-            <div class="product-4">
-                <a href="{{ url_for('product_inquiry') }}">
-                    <img src="../static/images/image 70.png" alt="">
-                    <p>Panasonic KX-UT670 SIP Phone</p>
-                </a>
-            </div>
-            <div class="product-4">
-                <a href="{{ url_for('product_inquiry') }}">
-                    <img src="../static/images/image 71.png" alt="">
-                    <p>Grandstream 1-Line IP Phone - GXP1615</p>
-                </a>
-            </div>
-            <div class="product-4">
+            <div class="product-2">
                 <a href="{{ url_for('product_inquiry') }}">
                     <img src="../static/images/image 72.png" alt="">
-                    <p>Grandstream 4-Line Enterprise IP Phone with POE - GXP2140</p>
+                </a>
+            </div>
+            <div class="product-2">
+                <a href="{{ url_for('product_inquiry') }}">
+                    <img src="../static/images/image 197.png" alt="">
+                </a>
+            </div>
+        </div>
+        <div class="page-main flex">
+            <div class="product-4">
+                <a href="{{ url_for('product_inquiry') }}">
+                    <img src="../static/images/image 199.png" alt="">
+                </a>
+            </div>
+            <div class="product-4">
+                <a href="{{ url_for('product_inquiry') }}">
+                    <img src="../static/images/image 207.png" alt="">
                 </a>
             </div>
         </div>
@@ -104,10 +83,9 @@
             <div class="owl-carousel owl-theme owl-loaded">
                 <div class="owl-stage-outer">
                     <div class="owl-stage product-interest-image">
-                        <div class="owl-item"><img src="../static/images/image 17.png" alt=""></div>
+                        <div class="owl-item"><img src="../static/images/image 54.png" alt=""></div>
                         <div class="owl-item"><img src="../static/images/image 66.png" alt=""></div>
                         <div class="owl-item"><img src="../static/images/image 30.png" alt=""></div>
-                        <div class="owl-item"><img src="../static/images/image 17.png" alt=""></div>
                     </div>
                 </div>
                 <div class="owl-nav">
@@ -126,29 +104,22 @@
 
 <section class="container product-interest-text">
     <p>
-        CCTV has grown intensely over the last few years due to the helpful impact that it has had on both public and
-        business organizations.
+        We install, repair and service all kinds of residential and business intercom systems, what differentiates us from competitors is the unique approach of delivering a complete security solution not just selling entry intercom panels.
     </p>
     <p>
-        Apart from CCTV installation Pendalton Integrated Services Limited, have now moved to both sales of CCTV
-        products and maintenance's. We also now work extensively with IP CCTV cameras and CCTV mobile surveillance. We
-        offer a variety of services from supplies and CCTV installation to repairs of CCTV systems nationwide.
+        Our team always do their best to choose and install the most appropriate and cost-effective solutions for your company or home. 
     </p>
     <p>
-        Our team are trained to a high standard and are able to provide CCTV installations, repairs and maintenance to
-        many brands of CCTV systems; providing low cost solutions for any upgrades or repairs to faulty systems.
-        Pendalton Integrated Services Limited complete a full CCTV maintenance check, ensuring that all CCTV cameras are
-        cleaned and are functioning as they should.
+        We not only stock the most reliable intercom brands such as Panasonic but also focus on aesthetic point of view of installed intercom systems and everyday convenience of using your intercom.
     </p>
     <p>
-        Here at Pendalton Integrated Services Limited we have created a recognized track record in providing a range of
-        flexible, cost effective CCTV systems and solutions to address your specific security surveillance needs. Our
-        trained team has many years experience within this industry; helping our customers to find the best security
-        cameras and other CCTV gadgets to keep their premises secure.
+        Our skilled and trained team possesses all the necessary knowledge and skill sets and to work with intercom panels from most of major brands.
     </p>
     <p>
-        Our CCTV system can be viewed remotely anywhere in the world with your iPad, Laptop, iPhone, Android, etc
-        We provide and also install CCTV systems to both commercial and domestic sectors throughout Nigeria.
+        Our company install, repair and service commercial and residential intercom systems in Lagos, and throughout Nigeria we specialize on multi-tenant intercom systems, commercial and business intercoms, telephone entry systems, multi-unit condo buzzers, audio and video intercoms, wired and wireless intercoms.
+    </p>
+    <p>
+        We provide Pabx/Intercom installation services in Lagos, and other parts of Nigeria. We also are also one of the profound Pabx installation company in Lagos and other parts of Nigeria. We also offer very affordable Pabx systems in Lagos and other parts of Nigeria.
     </p>
 </section>
-{% endblock content %}
+{% endblock content %} 

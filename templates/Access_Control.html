@@ -5,12 +5,24 @@
     <aside class="products-page-aside">
         <div class="page-aside latest">
             <ul>
-                <li><a href="{{ url_for('products') }}">CCTV Survelliance</a></li>
+                <li>
+                    <a class="" data-toggle="collapse" href="#collapseExample" role="button"
+                        aria-expanded="false" aria-controls="collapseExample">CCTV Products <i
+                            class="fas fa-angle-down down"></i> </a>
+                </li>
+                <div class="collapse cstyle" id="collapseExample">
+                    <ul>
+                        <li> <a href="{{ url_for('products') }}"><strong> Hikvision </strong></a></li>
+                        <li> <a href="{{ url_for('CCTV_AnalogCameras') }}"> Hd Analog/Ip Cameras </a></li>
+                        <li> <a href="{{ url_for('CCTV_CovertCameras') }}">Covert Cameras</a></li>
+                        <li> <a href="{{ url_for('CCTV_DVRS') }}">DVRs</a></li>
+                    </ul>
+                </div>
                 <li><a href="{{ url_for('Pabx_intercom') }}">PABX/Intercom</a></li>
-                <li class="text_change"><a href="{{ url_for('Access_Control') }}">Access Control</a></li>
+                <li><a href="{{ url_for('Access_Control') }}">Access Control</a></li>
                 <li><a href="{{ url_for('Fire_Alarm') }}">Fire / Burglary Alarm</a></li>
                 <li><a href="{{ url_for('Inverter_SolarSystem') }}">Inverter & Solar System</a></li>
-                <li><a href="{{ url_for('Permitter') }}">Permitter Fencing</a></li>
+                <li class="text_change"><a href="{{ url_for('Permitter') }}">Permitter Fencing</a></li>
             </ul>
         </div>
     </aside>
@@ -18,52 +30,12 @@
         <div class="page-main flex">
             <div class="product-1">
                 <a href="{{ url_for('product_inquiry') }}">
-                    <img src="../static/images/image 41.png" alt="">
-                    <p>Hikvision IP-based Fingerprint Access Control Terminal DS-K1T201MF</p>
+                    <img src="../static/images/image 200.png" alt="">
                 </a>
             </div>
-            <div class="product-2">
-                <a href="{{ url_for('product_inquiry') }}">
-                    <img src="../static/images/image 42.png" alt="">
-                    <p>Hikvision Standalone Access Control Terminal DS-K1T105M</p>
-                </a>
-            </div>
-            <div class="product-3">
-                <a href="{{ url_for('product_inquiry') }}">
-                    <img src="../static/images/image 43.png" alt="">
-                    <p>Zkteco SKW-X7 Time & Attendance</p>
-                </a>
-            </div>
-            <div class="product-4">
-                <a href="{{ url_for('product_inquiry') }}">
-                    <img src="../static/images/image 59.png" alt="">
-                    <p>ZK Teco F22 Fingerprint Time Attendance And Access Control Terminal</p>
-                </a>
-            </div>
-        </div>
-        <div class="page-main flex">
             <div class="product-1">
                 <a href="{{ url_for('product_inquiry') }}">
-                    <img src="../static/images/image 44.png" alt="">
-                    <p>Hikvision Video Door Phone DS-KIS203</p>
-                </a>
-            </div>
-            <div class="product-2">
-                <a href="{{ url_for('product_inquiry') }}">
-                    <img src="../static/images/image 50.png" alt="">
-                    <p>ZK Teco IClock 880 Time Attendance With ID & WCDMA/3G </p>
-                </a>
-            </div>
-            <div class="product-3">
-                <a href="{{ url_for('product_inquiry') }}">
-                    <img src="../static/images/image 49.png" alt="">
-                    <p>ZK Teco UFace302 Multi-Biometric LAN T&A And Access Control</p>
-                </a>
-            </div>
-            <div class="product-4">
-                <a href="{{ url_for('product_inquiry') }}">
-                    <img src="../static/images/image 51.png" alt="">
-                    <p>ZK Teco Fingerprint Time Attendance Machine S30 ZKT</p>
+                    <img src="../static/images/image 53.png" alt="">
                 </a>
             </div>
         </div>
@@ -71,27 +43,18 @@
             <div class="product-1">
                 <a href="{{ url_for('product_inquiry') }}">
                     <img src="../static/images/image 52.png" alt="">
-                    <p>ZK Teco SF100 Biometrics Access Control/ Time Attendance Device</p>
                 </a>
             </div>
-            <div class="product-2">
-                <a href="{{ url_for('product_inquiry') }}">
-                    <img src="../static/images/image 55.png" alt="">
-                    <p>ZKteco K40 Biometric Attendance & Access Control CH102 Device</p>
-                </a>
-            </div>
-            <div class="product-3">
+            <div class="product-1">
                 <a href="{{ url_for('product_inquiry') }}">
                     <img src="../static/images/image 54.png" alt="">
-                    <p>
-                        ZK Teco ZKTeco (K40) Fingerprint Time Attendance & Access Control
-                        </p>
                 </a>
             </div>
-            <div class="product-4">
+        </div>
+        <div class="page-main flex">
+            <div class="product-1">
                 <a href="{{ url_for('product_inquiry') }}">
-                    <img src="../static/images/image 53.png" alt="">
-                    <p>ZK Teco ZKT UA300 Time Attendance System</p>
+                    <img src="../static/images/image 204.png" alt="">
                 </a>
             </div>
         </div>
@@ -107,10 +70,9 @@
                 <div class="owlcar">
                     <div class="owl-stage-outer">
                         <div class="owl-stage product-interest-image">
-                            <div class="owl-item"><img src="../static/images/image 17.png" alt=""></div>
+                            <div class="owl-item"><img src="../static/images/image 54.png" alt=""></div>
                             <div class="owl-item"><img src="../static/images/image 66.png" alt=""></div>
                             <div class="owl-item"><img src="../static/images/image 30.png" alt=""></div>
-                            <div class="owl-item"><img src="../static/images/image 17.png" alt=""></div>
                         </div>
                     </div>
                     <div class="owl-nav">
@@ -130,29 +92,20 @@
 
 <section class="container product-interest-text">
     <p>
-        CCTV has grown intensely over the last few years due to the helpful impact that it has had on both public and
-        business organizations.
+        This is to control unauthorized movement and restrict entrance into restricted areas. For instance, Your Offices, Finance Departments or Cash Office, I.T Department, Fuel Dump, Car Parks and Garages, Government Secretariat, Stores and Warehouses, Government House complex.
     </p>
     <p>
-        Apart from CCTV installation Pendalton Integrated Services Limited, have now moved to both sales of CCTV
-        products and maintenance's. We also now work extensively with IP CCTV cameras and CCTV mobile surveillance. We
-        offer a variety of services from supplies and CCTV installation to repairs of CCTV systems nationwide.
+        Our Bio-Metric Integrated System will equally expose definitive finger Prints of any Suspects or Persons on identification by the device.
     </p>
     <p>
-        Our team are trained to a high standard and are able to provide CCTV installations, repairs and maintenance to
-        many brands of CCTV systems; providing low cost solutions for any upgrades or repairs to faulty systems.
-        Pendalton Integrated Services Limited complete a full CCTV maintenance check, ensuring that all CCTV cameras are
-        cleaned and are functioning as they should.
+        The Access Control central station manages all controlled doors in it network and connects up to 64 doors / Readers, inputs monitors and output control interfaces via two independent RS-485 networks.
     </p>
     <p>
-        Here at Pendalton Integrated Services Limited we have created a recognized track record in providing a range of
-        flexible, cost effective CCTV systems and solutions to address your specific security surveillance needs. Our
-        trained team has many years experience within this industry; helping our customers to find the best security
-        cameras and other CCTV gadgets to keep their premises secure.
+        It stores a complete access control and configuration database for up to 64 Readers / Doors and 44,000 card Holders with expansion capability up to 250,000 card Holders.
     </p>
     <p>
-        Our CCTV system can be viewed remotely anywhere in the world with your iPad, Laptop, iPhone, Android, etc
-        We provide and also install CCTV systems to both commercial and domestic sectors throughout Nigeria.
+        It connects to the host and other devices on a TCP/IP network, receives and processes real time commands from the host software application. Reports all activities to the host control and communicates with all connected devices.
     </p>
+    <p>Please take note that where certain offices are left out of the system’s protection - a complete and total protection may not be said to have been achieved, person of bad intention may use the unprotected office(s) to deploy their various activities, which would affect the protected offices in the organization.</p>
 </section>
 {% endblock content %}

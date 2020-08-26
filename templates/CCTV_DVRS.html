@@ -5,12 +5,22 @@
     <aside class="products-page-aside">
         <div class="page-aside">
             <ul>
-                <h3>CCTV PRODUCTS</h3>
-                <li> <a href="{{ url_for('products') }}">Hikvision</a></li>
-                <li> <a href="{{ url_for('CCTV_AnalogCameras') }}"> Hd Analog Cameras </a></li>
-                <li> <a href="{{ url_for('CCTV_IpCameras') }}">Ip Cameras</a></li>
-                <li> <a href="{{ url_for('CCTV_CovertCameras') }}">Covert Cameras</a></li>
-                <li> <a href="{{ url_for('CCTV_DVRS') }}"><strong> DVRs </strong></a></li>
+                <li>
+                    <a class="" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">CCTV Products <i class="fas fa-angle-down down"></i> </a>
+                </li>
+                <div class="collapse cstyle" id="collapseExample">
+                    <ul>
+                    <li> <a href="{{ url_for('products') }}"><strong> Hikvision </strong></a></li>
+                    <li> <a href="{{ url_for('CCTV_AnalogCameras') }}"> Hd Analog/Ip Cameras </a></li>
+                    <li> <a href="{{ url_for('CCTV_CovertCameras') }}">Covert Cameras</a></li>
+                    <li> <a href="{{ url_for('CCTV_DVRS') }}">DVRs</a></li>
+                    </ul>
+                </div>
+                <li><a href="{{ url_for('Pabx_intercom') }}">PABX/Intercom</a></li>
+                <li><a href="{{ url_for('Access_Control') }}">Access Control</a></li>
+                <li><a href="{{ url_for('Fire_Alarm') }}">Fire / Burglary Alarm</a></li>
+                <li><a href="{{ url_for('Inverter_SolarSystem') }}">Inverter & Solar System</a></li>
+                <li class="text_change"><a href="{{ url_for('Permitter') }}">Permitter Fencing</a></li>
             </ul>
         </div>
     </aside>
@@ -18,106 +28,36 @@
         <div class="page-main flex">
             <div class="product-1">
                 <a href="{{ url_for('product_inquiry') }}">
-                    <img src="../static/images/image 291.png" alt="">
-                    <p>Hikvision 4 CH TURBO 1080P DVR (1HDD)DS-7204HQHI-K1</p>
+                    <img src="../static/images/image 189.png" alt="">
                 </a>
             </div>
-            <div class="product-2">
-                <a href="{{ url_for('product_inquiry') }}">
-                    <img src="../static/images/image 301.png" alt="">
-                    <p>Hikvision 8CH TURBO DVR DS-7208HUHI-F1</p>
-                </a>
-            </div>
-            <div class="product-3">
-                <a href="{{ url_for('product_inquiry') }}">
-                    <img src="../static/images/image 31.png" alt="">
-                    <p>HikVision 16 CH DVR 7300 Series – Turbo 1080P – 2 HDD</p>
-                </a>
-            </div>
-            <div class="product-4">
-                <a href="{{ url_for('product_inquiry') }}">
-                    <img src="../static/images/image 159.png" alt="">
-                    <p>Hikvision 4 CH TURBO 720P DVR ( 1 HDD) DS-7204HGHI-F1</p>
-                </a>
-            </div>
-        </div>
-        <div class="page-main flex">
-            <div class="product-4">
-                <a href="{{ url_for('product_inquiry') }}">
-                    <img src="../static/images/image 160.png" alt="">
-                    <p>Hikvision 32ch DVR DS-7332HQHI-K4</p>
-                </a>
-            </div>
-            <div class="product-4">
-                <a href="{{ url_for('product_inquiry') }}">
-                    <img src="../static/images/image 32.png" alt="">
-                    <p>Hikvision 4 CH TURBO 720P DVR ( 1 HDD) DS-7204HGHI-F1</p>
-                </a>
-            </div>
-            <div class="product-4">
-                <a href="{{ url_for('product_inquiry') }}">
-                    <img src="../static/images/image 33.png" alt="">
-                    <p>Hikvision 16ch DVR DS-7116HGHI-F1</p>
-                </a>
-            </div>
-            <div class="product-4">
-                <a href="{{ url_for('product_inquiry') }}">
-                    <img src="../static/images/image 34.png" alt="">
-                    <p>Hikvision 8CH TURBO DVR DS-7208HUHI-F1</p>
-                </a>
-            </div>
-        </div>
-        <div class="page-main flex">
-            <div class="product-4">
-                <a href="{{ url_for('product_inquiry') }}">
-                    <img src="../static/images/image 35.png" alt="">
-                    <p>Hikvision DS-7216HQHI-K1 (S) turbo Hd DVR with 16ch audio</p>
-                </a>
-            </div>
-            <div class="product-4">
-                <a href="{{ url_for('product_inquiry') }}">
-                    <img src="../static/images/image 36.png" alt="">
-                    <p>Hikvision DS-7216HQHI-K1 (S) turbo Hd DVR with 16ch audio</p>
-                </a>
-            </div>
-            <div class="product-4">
-                <a href="{{ url_for('product_inquiry') }}">
-                    <img src="../static/images/image 37.png" alt="">
-                    <p>Hikvision 8 CH POC DVR- DS-7208HQHI-K2</p>
-                </a>
-            </div>
-            <div class="product-4">
+            <div class="product-1">
                 <a href="{{ url_for('product_inquiry') }}">
                     <img src="../static/images/image 161.png" alt="">
-                    <p>HikVision 16 CH DVR 7300 Series – Turbo 1080P – 2 HDD
-                    </p>
                 </a>
             </div>
         </div>
         <div class="page-main flex">
-            <div class="product-4">
+            <div class="product-1">
                 <a href="{{ url_for('product_inquiry') }}">
-                    <img src="../static/images/image 162.png" alt="">
-                    <p>Hikvision DS-7208HGHI-F1 8 CH TURBO 720P DVR (1 HDD)</p>
+                    <img src="../static/images/image 35.png" alt="">
                 </a>
             </div>
-            <div class="product-4">
+            <div class="product-1">
                 <a href="{{ url_for('product_inquiry') }}">
-                    <img src="../static/images/image 40.png" alt="">
-                    <p>Hikvision DS-2CE12DOT-PIRXF Turbo HD Bullet 
-                        PIR Siren</p>
+                    <img src="../static/images/image 208.png" alt="">
                 </a>
             </div>
-            <div class="product-4">
+        </div>
+        <div class="page-main flex">
+            <div class="product-1">
                 <a href="{{ url_for('product_inquiry') }}">
-                    <img src="../static/images/image 39.png" alt="">
-                    <p>Hikvision DS-7616NI-Q1 /8P 16CH NVR 8POE ( 1SATA)</p>
+                    <img src="../static/images/image 190.png" alt="">
                 </a>
             </div>
-            <div class="product-4">
+            <div class="product-1">
                 <a href="{{ url_for('product_inquiry') }}">
-                    <img src="../static/images/image 38.png" alt="">
-                    <p>Hikvision 32CH DVR 7300 SERIES TURBO 1080P (4 HDD)DS-7332HGHI-SH</p>
+                    <img src="../static/images/image 209.png" alt="">
                 </a>
             </div>
         </div>
@@ -132,10 +72,9 @@
             <div class="owl-carousel owl-theme owl-loaded">
                 <div class="owl-stage-outer">
                     <div class="owl-stage product-interest-image">
-                        <div class="owl-item"><img src="../static/images/image 17.png" alt=""></div>
+                        <div class="owl-item"><img src="../static/images/image 54.png" alt=""></div>
                         <div class="owl-item"><img src="../static/images/image 66.png" alt=""></div>
                         <div class="owl-item"><img src="../static/images/image 30.png" alt=""></div>
-                        <div class="owl-item"><img src="../static/images/image 17.png" alt=""></div>
                     </div>
                 </div>
                 <div class="owl-nav">

@@ -1,6 +1,6 @@
 from flask import Flask, render_template, request
-# from flask_mail import Mail, Message
-# import smtplib
+from flask_mail import Mail, Message
+import smtplib
 
 app = Flask(__name__)
 
@@ -10,10 +10,8 @@ app = Flask(__name__)
 # app.config['MAIL_PORT'] = 587
 # app.config['MAIL_USE_TLS'] = True
 # app.config['MAIL_USE_SSL'] = False
-# app.config['MAIL_USERNAME'] = os.environ.get('EMAIL_USER')
-# app.config['MAIL_PASSWORD'] = os.environ.get('EMAIL_PASS')
 # app.config['MAIL_USERNAME'] = 'itskeldon@gmail.com'
-# app.config['MAIL_PASSWORD'] = 'google.com/keldon'
+# app.config['MAIL_PASSWORD'] = ''
 # app.config['MAIL_DEFAULT_SENDER'] = 'itskeldon@gmail.com'
 # app.config['MAIL_MAX_EMAILS'] = None
 # app.config['MAIL_ASCII_ATTACHMENTS'] = False
@@ -45,7 +43,7 @@ def send_message():
 # def new():
 #     msg = Message('Hey there', recipients=['itskeldon@gmail.com'])
 #     mail.send(msg)
-#     return 'Message sent'
+#     return render_template("msgsent.html")
 
 @app.route('/CCTV_AnalogCameras')
 def CCTV_AnalogCameras():
@@ -82,6 +80,20 @@ def Inverter_SolarSystem():
 @app.route('/Permitter')
 def Permitter():
     return render_template("Permitter.html")
+
+
+@app.errorhandler(404)
+def error_404(error):
+    return render_template("404.html"), 404
+
+@app.errorhandler(403)
+def error_403(error):
+    return render_template("404.html"), 403
+
+@app.errorhandler(500)
+def error_500(error):
+    return render_template("404.html"), 500
+
 
 if __name__=='__main__':
     app.run(debug=True)
