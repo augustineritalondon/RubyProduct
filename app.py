@@ -1,6 +1,6 @@
 from flask import Flask, render_template, request
-from flask_mail import Mail, Message
-import smtplib
+# from flask_mail import Mail, Message
+# import smtplib
 
 app = Flask(__name__)
 
