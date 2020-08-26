@@ -786,7 +786,10 @@ button:focus {
         margin-right: 2em;
     }
     .footer-icons{
-        margin-left: 25%;
+        margin-left: 35%;
+    }
+    .footer-icons a{
+        padding-right: 1em;
     }
 
 
