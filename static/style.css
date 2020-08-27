@@ -812,12 +812,11 @@ button:focus {
         flex-direction: row;
     }
     .product-1 img{
-        width: 130px;
+        width: 200px;
         height: 130px;
     }
     .product-1{
-        width: 40%;
-        margin: 0 auto;
+        width: 50%;
         margin-top: .75em;
     }
     .product-2{
