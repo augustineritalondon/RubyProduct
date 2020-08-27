@@ -815,13 +815,16 @@ button:focus {
         width: 200px;
         height: 130px;
     }
+    .product-2 img{
+        width: 200px;
+        height: 130px;
+    }
     .product-1{
         width: 50%;
         margin-top: .75em;
     }
     .product-2{
         width: 40%;
-        margin: 0 auto;
         margin-top: 1em;
     }
     .product-4{
