@@ -1,22 +1,21 @@
 from flask import Flask, render_template, request
-# from flask_mail import Mail, Message
-# import smtplib
+from flask_mail import Mail, Message
 
 app = Flask(__name__)
 
-# app.config['DEBUG'] = True
-# app.config['TESTING'] = False
-# app.config['MAIL_SERVER'] = 'smtp.gmail.com'
-# app.config['MAIL_PORT'] = 587
-# app.config['MAIL_USE_TLS'] = True
-# app.config['MAIL_USE_SSL'] = False
-# app.config['MAIL_USERNAME'] = 'itskeldon@gmail.com'
-# app.config['MAIL_PASSWORD'] = ''
-# app.config['MAIL_DEFAULT_SENDER'] = 'itskeldon@gmail.com'
-# app.config['MAIL_MAX_EMAILS'] = None
-# app.config['MAIL_ASCII_ATTACHMENTS'] = False
+app.config['DEBUG'] = True
+app.config['TESTING'] = False
+app.config['MAIL_SERVER'] = 'smtp.gmail.com'
+app.config['MAIL_PORT'] = 587
+app.config['MAIL_USE_TLS'] = True
+app.config['MAIL_USE_SSL'] = False
+app.config['MAIL_USERNAME'] = 'pendaltonserv@gmail.com'
+app.config['MAIL_PASSWORD'] = 'CAMERA123'
+app.config['MAIL_DEFAULT_SENDER'] = ('message from pendalton website','pendaltonserv@gmail.com')
+app.config['MAIL_MAX_EMAILS'] = None
+app.config['MAIL_ASCII_ATTACHMENTS'] = False
 
-# mail = Mail(app)
+mail = Mail(app)
 
 @app.route('/')
 @app.route('/home')
@@ -35,15 +34,11 @@ def products():
 def product_inquiry():
     return render_template("product_inquiry.html")
 
-@app.route('/send_message', methods=['GET', 'POST'])
-def send_message():
-    return "Message sent"
-
-# @app.route('/new')
-# def new():
-#     msg = Message('Hey there', recipients=['itskeldon@gmail.com'])
-#     mail.send(msg)
-#     return render_template("msgsent.html")
+@app.route('/new')
+def new():
+    msg = Message('Hey there', recipients=['itskeldon@gmail.com'])
+    mail.send(msg)
+    return render_template("msgsent.html")
 
 @app.route('/CCTV_AnalogCameras')
 def CCTV_AnalogCameras():
@@ -94,6 +89,20 @@ def error_403(error):
 def error_500(error):
     return render_template("404.html"), 500
 
+
+@app.route('/send_message', methods=['GET','POST'])
+def send_message():
+    if request.method == "POST":
+        subject = request.form['email']
+        msg = request.form['message']
+
+        message = Message(subject, sender=['message from pendalton website','pendaltonserv@gmail.com'], recipients=['pendaltonserv@gmail.com'])
+
+        message.body = msg
+
+        mail.send(message)
+
+    return render_template("msgsent.html")
 
 if __name__=='__main__':
     app.run(debug=True)

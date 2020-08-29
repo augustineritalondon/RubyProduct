@@ -20,11 +20,11 @@
                 <li><a href="{{ url_for('Access_Control') }}">Access Control</a></li>
                 <li><a href="{{ url_for('Fire_Alarm') }}">Fire / Burglary Alarm</a></li>
                 <li><a href="{{ url_for('Inverter_SolarSystem') }}">Inverter & Solar System</a></li>
-                <li><a href="{{ url_for('Permitter') }}" style="color: #08073A; text-decoration: underline;">Permitter Fencing</a></li>
+                <li><i class="fa fa-angle-right" aria-hidden="true"></i><a href="{{ url_for('Permitter') }}" style="color: #08073A; text-decoration: underline;">Permitter Fencing</a></li>
             </ul>
         </div>
     </aside>
-    <div class="products-page-main">
+    <div class="products-page-main flex">
         <div class="page-main flex">
             <div class="product-1">
                 <a href="{{ url_for('product_inquiry') }}">
@@ -56,7 +56,7 @@
         <div class="page-main flex">
             <div class="product-1">
                 <a href="{{ url_for('product_inquiry') }}">
-                    <img src="../static/images/image 43.png" alt="">
+                    <img src="../static/images/image 163.png" alt="">
                     <p></p>
                 </a>
             </div>
@@ -76,11 +76,17 @@
         <h1>Products you might be interest in</h1>
         <div class="product-interest-image flex">
             <div class="owl-carousel owl-theme owl-loaded">
-                <div class="owl-stage-outer">
-                    <div class="owl-stage product-interest-image">
-                        <div class="owl-item"><img src="../static/images/image 54.png" alt=""></div>
-                        <div class="owl-item"><img src="../static/images/image 66.png" alt=""></div>
-                        <div class="owl-item"><img src="../static/images/image 30.png" alt=""></div>
+                <div class="owlcar">
+                    <div class="owl-stage-outer">
+                        <div class="owl-stage product-interest-image">
+                            <div class="owl-item"><a href="{{ url_for('Inverter_SolarSystem') }}"><img src="../static/images/image 219.png" alt=""></a></div>
+                            <div class="owl-item"><a href="{{ url_for('Access_Control') }}"><img src="../static/images/image 54.png" alt=""></a></div>
+                            <div class="owl-item"><a href="{{ url_for('products') }}"><img src="../static/images/image 16.png" alt=""></a></div>
+                            <div class="owl-item"><a href="{{ url_for('Pabx_intercom') }}"><img src="../static/images/image 197.png" alt=""></a></div>
+                            <div class="owl-item"><a href="{{ url_for('CCTV_DVRS') }}"><img src="../static/images/image 199.png" alt=""></a></div>
+                            <!-- <div class="owl-item"><a href="{{ url_for('Permitter') }}"><img src="../static/images/image 165.png" alt=""></a></div> -->
+                            <div class="owl-item"><a href="{{ url_for('Fire_Alarm') }}"><img src="../static/images/image 221-1.png" alt=""></a></div>
+                        </div>
                     </div>
                 </div>
                 <div class="owl-nav">

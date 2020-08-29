@@ -1,7 +1,10 @@
 {% extends 'layout.html' %}
 {% block content %}
-<h1>
-    you have successfully sent this message. <br> Thank you for contact us.
-</h1>
-<button class="btn btn-danger"><a href="{{ url_for('home') }}">Home</a></button>
+<div class="container sent-message">
+    <img src="../static/images/423-4236284_png-images-success-icon-png-transparent-png-download.png" alt="">
+    <h1>
+        you have successfully sent this message. <br> Thank you for contact us.
+    </h1>
+    <button class="btn btn-danger"><a href="{{ url_for('home') }}">Home</a></button>
+</div>
 {% endblock content %}

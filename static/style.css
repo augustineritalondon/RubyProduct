@@ -60,6 +60,44 @@ img{
     border-radius: 50%;
     outline: transparent;
 }
+
+.sent-message{
+    margin-top: 3em;
+}
+
+.sent-message img{
+    width: 50px;
+    height: 50px;
+}
+
+.sent-message h1{
+    font-size: 2rem;
+    font-weight: 700;
+    color: #08073A;
+    margin-bottom: 1em;
+}
+
+.sent-message button{
+    background: #08073A;
+    text-decoration: none;
+    border-color: #08073A;
+}
+.sent-message a{
+    color: white;
+}
+
+.client h3{
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-top: 2em;
+    text-transform: uppercase;
+}
+.client p{
+    font-size: 1rem;
+}
+.client-image{
+    margin-left: 23em;
+}
 /* ****NAVIGATION START*** */
 
 .search{
@@ -361,13 +399,11 @@ img{
     width: 20px;
 }
 
-
-
-
-
-
-
-
+.sear{
+    position: relative;
+    top: 1.5em;
+    left: -.75em;
+}
 
 .testimonial{
     margin-top: 6em;
@@ -478,6 +514,23 @@ button:focus {
     margin-right: 3em;
 }
 
+.invert img{
+    width: 100px;
+    height: 100px;
+}
+.productsmain{
+    flex-direction: row;
+}
+.product-1{
+    margin-top: 1em;
+}
+.product-2{
+    margin-top: 1em;
+}
+.product-4{
+    margin-top: 1em;
+}
+
 .products-page-aside a{
     color: #504f4f;
     font-size: 15px;
@@ -490,7 +543,11 @@ button:focus {
     width: 100px;
     height: 100px;
 }
-
+.products-page-main{
+    width: 40%;
+    display: block;
+    margin: 0 auto;
+}
 
 .product-interest{
     background: rgba(196, 196, 196, 0.1);
@@ -664,6 +721,11 @@ button:focus {
     .ser-2{
         flex-direction: row;
     }
+    .sear{
+        position: relative;
+        top: 0;
+        left: 0;
+    }
 
     .products{
         max-width: 100%;
@@ -808,6 +870,9 @@ button:focus {
     .products-page-main{
         width: 60%;
     }
+    .products-page-main{
+        flex-direction: column;
+    }
     .page-main{
         flex-direction: row;
     }
@@ -821,7 +886,7 @@ button:focus {
     }
     .product-1{
         width: 50%;
-        margin-top: .75em;
+        margin-top: 1em;
     }
     .product-2{
         width: 40%;

@@ -3,7 +3,7 @@
 <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
     <div class="carousel-inner">
         <div class="carousel-item active img-gradient">
-            <img src="../static/images/image 2.png" class="d-block w-100 image" alt="...">
+            <img src="../static/images/Group 1.jpg" class="d-block w-100 image" alt="...">
             <div class="carousel-caption d-md-block">
                 <h5> <strong> Pendalaton </strong>  </h5>
                 <h5 class="h">Integrated Services</h5>
@@ -212,7 +212,7 @@
         <p>We would love to hear from you, send us a message using this form or click on the WhatsApp icon to chat with
             us directly </p>
 
-        <form action="" method="POST">
+        <form action="{{url_for('send_message')}}" method="POST">
             <div class="form-row">
                 <div class="form-group col-md-6">
                     <label for="inputFirstName">First Name</label>
